@@ -1,0 +1,88 @@
+excluded:
+  - Pods
+disabled_rules:
+  - nesting
+  - superfluous_disable_command
+  - todo
+  - trailing_whitespace
+  - vertical_whitespace
+opt_in_rules:
+  - closure_body_length
+  - closure_end_indentation
+  - closure_spacing
+  - collection_alignment
+  - contains_over_filter_count
+  - contains_over_filter_is_empty
+  - contains_over_first_not_nil
+  - contains_over_range_nil_comparison
+  - discouraged_object_literal
+  - empty_collection_literal
+  - empty_count
+  - empty_string
+  - enum_case_associated_values_count
+  - explicit_init
+  - fatal_error_message
+  - file_name_no_space
+  - first_where
+  - identical_operands
+  - implicitly_unwrapped_optional
+  - joined_default_parameter
+  - last_where
+  - legacy_multiple
+  - legacy_random
+  - literal_expression_end_indentation
+  - lower_acl_than_parent
+  - multiline_arguments
+  - multiline_literal_brackets
+  - multiline_parameters
+  - operator_usage_whitespace
+  - operator_whitespace
+  - optional_enum_case_matching
+  - override_in_extension
+  - pattern_matching_keywords
+  - prefixed_toplevel_constant
+  - private_action
+  - private_outlet
+  - redundant_type_annotation
+  - sorted_first_last
+  - sorted_imports
+  - static_operator
+  - strong_iboutlet
+  - switch_case_on_newline
+  - toggle_bool
+  - trailing_closure
+  - type_contents_order
+  - unavailable_function
+  - unneeded_parentheses_in_closure_argument
+  - unused_declaration
+  - unused_import
+  - vertical_parameter_alignment_on_call
+  - yoda_condition
+
+closure_body_length:
+  warning: 40
+  error: 40
+cyclomatic_complexity:
+  ignores_case_statements: true
+file_length:
+  warning: 250
+  error: 250
+identifier_name:
+  min_length: 2
+  max_length: 60
+  excluded:
+    - r
+line_length:
+  warning: 150
+  error: 150
+type_body_length:
+  warning: 250
+  error: 250
+type_name:
+  excluded: 
+    - T
+  max_length: 50
+warning_threshold:
+  warning: 20
+  error: 20
+    
