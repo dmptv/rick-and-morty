@@ -1,0 +1,22 @@
+//
+//  BaseAssembly.swift
+//  Test-Project
+//
+//  Created by Kanat on 06.01.2021.
+//
+
+import Swinject
+
+final class BaseAssembly: Assembly {
+    init() {}
+
+    func assemble(container: Container) {
+        assembleNetwork(container)
+    }
+
+
+
+    private func assembleNetwork(_ container: Container) {
+        
+    }
+}
