@@ -39,6 +39,8 @@ final class MainViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        setupObservers()
+        store.dispatch(action: .didLoadView)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -59,13 +61,35 @@ final class MainViewController: BaseViewController {
     }
     
     private func setupUI() {
-        title = "Rock and Marty"
+        title = "Rick and Morty"
         setupTableView()
         updateColors()
     }
 
     private func setupTableView() {
-        
+        tableView.dataSource = tableViewDataSourceImpl
+        tableView.register(aClass: UITableViewCell.self)
+    }
+    
+    private func setupObservers() {
+        store.$state.observe(self) { vc, state in
+            guard let state = state else { return }
+            switch state {
+            case .loading:
+//                ProgressHud.startAnimating()
+                break
+            case .loadingFinished:
+//                ProgressHud.stopAnimating()
+                break
+            case let .sections(sections):
+                vc.tableViewDelegateImpl.sections = sections
+                vc.tableViewDataSourceImpl.sections = sections
+                vc.tableView.reloadData()
+            case let .error(message):
+//                vc.showToast(category: .error, message: message)
+                print("error", message as Any)
+            }
+        }
     }
 
     private func updateColors() {

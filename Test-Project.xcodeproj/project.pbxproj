@@ -16,6 +16,8 @@
 		0F547B1425A5D490001AD526 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F547B1325A5D490001AD526 /* Observable.swift */; };
 		0F547B1825A5D507001AD526 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F547B1725A5D507001AD526 /* Provider.swift */; };
 		0F547B1C25A5D5A2001AD526 /* AlamofireNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F547B1B25A5D5A2001AD526 /* AlamofireNetwork.swift */; };
+		0F547B2025A5DCFB001AD526 /* TableView+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F547B1F25A5DCFB001AD526 /* TableView+Extention.swift */; };
+		0F547B2425A5E746001AD526 /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F547B2325A5E746001AD526 /* CharacterViewModel.swift */; };
 		0F8E740425A485E800A43121 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8E740325A485E800A43121 /* AppDelegate.swift */; };
 		0F8E740D25A485E800A43121 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F8E740C25A485E800A43121 /* Assets.xcassets */; };
 		0F8E741025A485E800A43121 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F8E740E25A485E800A43121 /* LaunchScreen.storyboard */; };
@@ -42,6 +44,8 @@
 		0F547B1325A5D490001AD526 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		0F547B1725A5D507001AD526 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 		0F547B1B25A5D5A2001AD526 /* AlamofireNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNetwork.swift; sourceTree = "<group>"; };
+		0F547B1F25A5DCFB001AD526 /* TableView+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView+Extention.swift"; sourceTree = "<group>"; };
+		0F547B2325A5E746001AD526 /* CharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
 		0F8E740025A485E800A43121 /* Test-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F8E740325A485E800A43121 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F8E740C25A485E800A43121 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				0F547B1325A5D490001AD526 /* Observable.swift */,
+				0F547B1F25A5DCFB001AD526 /* TableView+Extention.swift */,
 			);
 			name = Foundation;
 			sourceTree = "<group>";
@@ -121,6 +126,14 @@
 				0F547B1B25A5D5A2001AD526 /* AlamofireNetwork.swift */,
 			);
 			name = Alamofire;
+			sourceTree = "<group>";
+		};
+		0F547B2625A5E74E001AD526 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0F547B2325A5E746001AD526 /* CharacterViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		0F8E73F725A485E800A43121 = {
@@ -177,6 +190,8 @@
 			isa = PBXGroup;
 			children = (
 				0F8E744825A49C9C00A43121 /* ApplicationCoordinator.swift */,
+				0F8E744B25A49CD700A43121 /* CoordinatorFactory.swift */,
+				0F8E744E25A49D2300A43121 /* ModuleFactory.swift */,
 				0F8E743625A489D200A43121 /* Main */,
 			);
 			path = Scenes;
@@ -188,6 +203,7 @@
 				0F547B0425A5CEBC001AD526 /* Controller */,
 				0F547B0625A5CEC9001AD526 /* TableView */,
 				0F547B0D25A5CF24001AD526 /* Store */,
+				0F547B2625A5E74E001AD526 /* ViewModel */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -209,8 +225,6 @@
 			children = (
 				0F8E744125A49B0200A43121 /* Coordinator.swift */,
 				0F8E744425A49B2800A43121 /* Router.swift */,
-				0F8E744B25A49CD700A43121 /* CoordinatorFactory.swift */,
-				0F8E744E25A49D2300A43121 /* ModuleFactory.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -379,7 +393,9 @@
 				0F547AE825A5833D001AD526 /* BaseNavigationController.swift in Sources */,
 				0F547B0B25A5CF0F001AD526 /* MainTableViewDataSourceImpl.swift in Sources */,
 				0F547B1C25A5D5A2001AD526 /* AlamofireNetwork.swift in Sources */,
+				0F547B2025A5DCFB001AD526 /* TableView+Extention.swift in Sources */,
 				0F8E743C25A48A7200A43121 /* CompositeAppDelegateConfigurator.swift in Sources */,
+				0F547B2425A5E746001AD526 /* CharacterViewModel.swift in Sources */,
 				0F8E744925A49C9C00A43121 /* ApplicationCoordinator.swift in Sources */,
 				0F547AFC25A5B065001AD526 /* BaseAssembly.swift in Sources */,
 				0F8E745325A49D8200A43121 /* MainViewController.swift in Sources */,

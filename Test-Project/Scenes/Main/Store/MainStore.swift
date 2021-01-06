@@ -7,6 +7,19 @@
 
 import Foundation
 
+struct CharactersSection {
+    enum SectionType {
+        case characters
+    }
+
+    enum RowType {
+        case character(viewModel: CharacterViewModelProtocol)
+    }
+
+    let type: SectionType
+    let rows: [RowType]
+}
+
 final class MainStore {
     
     enum Action {
@@ -17,6 +30,7 @@ final class MainStore {
         case loading
         case loadingFinished
         case error(message: String?)
+        case sections(sections: [CharactersSection])
     }
     
     private let provider: MainProvider
