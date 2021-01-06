@@ -12,14 +12,22 @@ protocol MainNavigationDelegate: class {
 }
 
 private enum Constants {
-    static let menuProgressFromTipThreshold: CGFloat = 44
+    
 }
 
 final class MainViewController: BaseViewController {
+    private let store: MainStore
     private weak var navigationDelegate: MainNavigationDelegate?
-
-    init(navigationDelegate: MainNavigationDelegate) {
+    private let tableViewDelegateImpl: MainTableViewDelegateImpl
+    private let tableViewDataSourceImpl: MainTableViewDataSourceImpl
+    
+    @IBOutlet private var tableView: UITableView!
+    
+    init(store: MainStore, navigationDelegate: MainNavigationDelegate) {
+        self.store = store
         self.navigationDelegate = navigationDelegate
+        tableViewDataSourceImpl = .init(store: store)
+        tableViewDelegateImpl = .init(store: store)
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -30,12 +38,11 @@ final class MainViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateColors()
+        setupUI()
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(true, animated: animated)
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -44,14 +51,22 @@ final class MainViewController: BaseViewController {
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        navigationController?.setNavigationBarHidden(false, animated: animated)
     }
 
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         super.traitCollectionDidChange(previousTraitCollection)
         updateColors()
     }
+    
+    private func setupUI() {
+        title = "Rock and Marty"
+        setupTableView()
+        updateColors()
+    }
 
+    private func setupTableView() {
+        
+    }
 
     private func updateColors() {
         view.backgroundColor = .white

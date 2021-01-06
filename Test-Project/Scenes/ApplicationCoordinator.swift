@@ -25,7 +25,7 @@ final class ApplicationCoordinator: Coordinator {
 
     private func showMain() {
         let main = moduleFactory.makeMain(navigationDelegate: self)
-        router.setRootModule(main, isNavigationBarHidden: true)
+        router.setRootModule(main, isNavigationBarHidden: false)
     }
 
 }

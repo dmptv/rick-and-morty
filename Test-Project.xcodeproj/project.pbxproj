@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		0F547AE825A5833D001AD526 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F547AE725A5833D001AD526 /* BaseNavigationController.swift */; };
 		0F547AFC25A5B065001AD526 /* BaseAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F547AEB25A587A9001AD526 /* BaseAssembly.swift */; };
+		0F547B0225A5CD90001AD526 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F547B0125A5CD90001AD526 /* MainViewController.xib */; };
+		0F547B0825A5CEFF001AD526 /* MainTableViewDelegateImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F547B0725A5CEFF001AD526 /* MainTableViewDelegateImpl.swift */; };
+		0F547B0B25A5CF0F001AD526 /* MainTableViewDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F547B0A25A5CF0F001AD526 /* MainTableViewDataSourceImpl.swift */; };
+		0F547B0F25A5CF3D001AD526 /* MainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F547B0E25A5CF3D001AD526 /* MainStore.swift */; };
+		0F547B1425A5D490001AD526 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F547B1325A5D490001AD526 /* Observable.swift */; };
+		0F547B1825A5D507001AD526 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F547B1725A5D507001AD526 /* Provider.swift */; };
+		0F547B1C25A5D5A2001AD526 /* AlamofireNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F547B1B25A5D5A2001AD526 /* AlamofireNetwork.swift */; };
 		0F8E740425A485E800A43121 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8E740325A485E800A43121 /* AppDelegate.swift */; };
 		0F8E740D25A485E800A43121 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F8E740C25A485E800A43121 /* Assets.xcassets */; };
 		0F8E741025A485E800A43121 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F8E740E25A485E800A43121 /* LaunchScreen.storyboard */; };
@@ -28,6 +35,13 @@
 		0E56245DAF2571AC2C7CAB58 /* Pods-Test-Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test-Project.debug.xcconfig"; path = "Target Support Files/Pods-Test-Project/Pods-Test-Project.debug.xcconfig"; sourceTree = "<group>"; };
 		0F547AE725A5833D001AD526 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		0F547AEB25A587A9001AD526 /* BaseAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAssembly.swift; sourceTree = "<group>"; };
+		0F547B0125A5CD90001AD526 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		0F547B0725A5CEFF001AD526 /* MainTableViewDelegateImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewDelegateImpl.swift; sourceTree = "<group>"; };
+		0F547B0A25A5CF0F001AD526 /* MainTableViewDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewDataSourceImpl.swift; sourceTree = "<group>"; };
+		0F547B0E25A5CF3D001AD526 /* MainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStore.swift; sourceTree = "<group>"; };
+		0F547B1325A5D490001AD526 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		0F547B1725A5D507001AD526 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		0F547B1B25A5D5A2001AD526 /* AlamofireNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNetwork.swift; sourceTree = "<group>"; };
 		0F8E740025A485E800A43121 /* Test-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F8E740325A485E800A43121 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F8E740C25A485E800A43121 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,6 +72,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F547B0425A5CEBC001AD526 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0F8E745225A49D8200A43121 /* MainViewController.swift */,
+				0F547B0125A5CD90001AD526 /* MainViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0F547B0625A5CEC9001AD526 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				0F547B0A25A5CF0F001AD526 /* MainTableViewDataSourceImpl.swift */,
+				0F547B0725A5CEFF001AD526 /* MainTableViewDelegateImpl.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		0F547B0D25A5CF24001AD526 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				0F547B0E25A5CF3D001AD526 /* MainStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		0F547B1225A5D481001AD526 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				0F547B1325A5D490001AD526 /* Observable.swift */,
+			);
+			name = Foundation;
+			sourceTree = "<group>";
+		};
+		0F547B1625A5D4F4001AD526 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				0F547B1725A5D507001AD526 /* Provider.swift */,
+				0F547B1A25A5D595001AD526 /* Alamofire */,
+			);
+			name = Providers;
+			sourceTree = "<group>";
+		};
+		0F547B1A25A5D595001AD526 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				0F547B1B25A5D5A2001AD526 /* AlamofireNetwork.swift */,
+			);
+			name = Alamofire;
+			sourceTree = "<group>";
+		};
 		0F8E73F725A485E800A43121 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +176,7 @@
 		0F8E743325A4898400A43121 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				0F8E744825A49C9C00A43121 /* ApplicationCoordinator.swift */,
 				0F8E743625A489D200A43121 /* Main */,
 			);
 			path = Scenes;
@@ -119,7 +185,9 @@
 		0F8E743625A489D200A43121 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				0F8E745225A49D8200A43121 /* MainViewController.swift */,
+				0F547B0425A5CEBC001AD526 /* Controller */,
+				0F547B0625A5CEC9001AD526 /* TableView */,
+				0F547B0D25A5CF24001AD526 /* Store */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -129,6 +197,8 @@
 			children = (
 				0F8E745525A49E3D00A43121 /* BaseViewController.swift */,
 				0F547AE725A5833D001AD526 /* BaseNavigationController.swift */,
+				0F547B1225A5D481001AD526 /* Foundation */,
+				0F547B1625A5D4F4001AD526 /* Providers */,
 				0F8E743A25A48A4B00A43121 /* Services */,
 			);
 			path = Core;
@@ -139,7 +209,6 @@
 			children = (
 				0F8E744125A49B0200A43121 /* Coordinator.swift */,
 				0F8E744425A49B2800A43121 /* Router.swift */,
-				0F8E744825A49C9C00A43121 /* ApplicationCoordinator.swift */,
 				0F8E744B25A49CD700A43121 /* CoordinatorFactory.swift */,
 				0F8E744E25A49D2300A43121 /* ModuleFactory.swift */,
 			);
@@ -224,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F8E741025A485E800A43121 /* LaunchScreen.storyboard in Resources */,
+				0F547B0225A5CD90001AD526 /* MainViewController.xib in Resources */,
 				0F8E740D25A485E800A43121 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,14 +365,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F547B1425A5D490001AD526 /* Observable.swift in Sources */,
 				0F8E743F25A49AB700A43121 /* StartupAppDelegateConfigurator.swift in Sources */,
+				0F547B1825A5D507001AD526 /* Provider.swift in Sources */,
+				0F547B0F25A5CF3D001AD526 /* MainStore.swift in Sources */,
 				0F8E744F25A49D2300A43121 /* ModuleFactory.swift in Sources */,
 				0F8E745625A49E3D00A43121 /* BaseViewController.swift in Sources */,
+				0F547B0825A5CEFF001AD526 /* MainTableViewDelegateImpl.swift in Sources */,
 				0F8E744225A49B0200A43121 /* Coordinator.swift in Sources */,
 				0F8E744525A49B2800A43121 /* Router.swift in Sources */,
 				0F8E740425A485E800A43121 /* AppDelegate.swift in Sources */,
 				0F8E744C25A49CD700A43121 /* CoordinatorFactory.swift in Sources */,
 				0F547AE825A5833D001AD526 /* BaseNavigationController.swift in Sources */,
+				0F547B0B25A5CF0F001AD526 /* MainTableViewDataSourceImpl.swift in Sources */,
+				0F547B1C25A5D5A2001AD526 /* AlamofireNetwork.swift in Sources */,
 				0F8E743C25A48A7200A43121 /* CompositeAppDelegateConfigurator.swift in Sources */,
 				0F8E744925A49C9C00A43121 /* ApplicationCoordinator.swift in Sources */,
 				0F547AFC25A5B065001AD526 /* BaseAssembly.swift in Sources */,
