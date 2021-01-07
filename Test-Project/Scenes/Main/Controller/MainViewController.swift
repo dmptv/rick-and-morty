@@ -68,7 +68,7 @@ final class MainViewController: BaseViewController {
 
     private func setupTableView() {
         tableView.dataSource = tableViewDataSourceImpl
-        tableView.register(aClass: UITableViewCell.self)
+        tableView.register(cellClass: CharacterTableViewCell.self)
     }
     
     private func setupObservers() {

@@ -27,11 +27,9 @@ extension MainTableViewDelegateImpl: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        switch sections[indexPath.section].rows[indexPath.row] {
-        case let .character(viewModel):
-            guard let cell = cell as? CharacterTableViewCell else { return }
-            cell.configure(with: viewModel)
-        }
+        let viewModel = sections[indexPath.section].rows[indexPath.row]
+        guard let cell = cell as? CharacterTableViewCell else { return }
+        cell.configure(with: viewModel)
     }
 
 }

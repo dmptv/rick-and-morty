@@ -16,11 +16,21 @@ protocol CharacterViewModelProtocol {
 
 
 struct CharacterViewModel: CharacterViewModelProtocol {
-    var id: String?
+    var id: String? {
+        character.id
+    }
     
-    var name: String?
+    var name: String? {
+        character.name
+    }
     
-    var image: UIImage?
+    var image: UIImage? {
+        UIImage(named: "test")
+    }
     
-    
+    private let character: CharacterDataModel
+
+    init(character: CharacterDataModel) {
+        self.character = character
+    }
 }

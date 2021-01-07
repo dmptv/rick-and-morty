@@ -8,16 +8,7 @@
 import Foundation
 
 struct CharactersSection {
-    enum SectionType {
-        case characters
-    }
-
-    enum RowType {
-        case character(viewModel: CharacterViewModelProtocol)
-    }
-
-    let type: SectionType
-    let rows: [RowType]
+    let rows: [CharacterViewModelProtocol]
 }
 
 final class MainStore {
@@ -45,12 +36,28 @@ final class MainStore {
         switch action {
         case .didLoadView:
             state = .loading
-            getData()
+            getCharacters()
         }
     }
     
-    private func getData() {
+    private func getCharacters() {
+        setupSections()
+    }
+    
+    private func setupSections() {
+        let characters: [CharacterDataModel] = [
+            CharacterDataModel(id: "12", name: "12", image: "12"),
+            CharacterDataModel(id: "12", name: "12", image: "12"),
+            CharacterDataModel(id: "12", name: "12", image: "12")
+        ]
         
+        let viewModels: [CharacterViewModelProtocol] = characters.map { char in
+            CharacterViewModel(character: char)
+        }
+        
+        let rows: [CharacterViewModelProtocol] = viewModels
+        let charSection = CharactersSection(rows: rows)
+        state = .sections(sections: [charSection])
     }
         
 }
