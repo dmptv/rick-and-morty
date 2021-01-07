@@ -68,6 +68,7 @@ final class MainViewController: BaseViewController {
 
     private func setupTableView() {
         tableView.dataSource = tableViewDataSourceImpl
+        tableView.delegate = tableViewDelegateImpl
         tableView.register(cellClass: CharacterTableViewCell.self)
     }
     

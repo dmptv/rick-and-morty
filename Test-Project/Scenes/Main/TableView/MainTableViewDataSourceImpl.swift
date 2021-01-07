@@ -27,7 +27,9 @@ extension MainTableViewDataSourceImpl: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let viewModel = sections[indexPath.section].rows[indexPath.row]
         let cell: CharacterTableViewCell = tableView.dequeueReusableCell(for: indexPath)
+        cell.configure(with: viewModel)
         return cell
     }
 }

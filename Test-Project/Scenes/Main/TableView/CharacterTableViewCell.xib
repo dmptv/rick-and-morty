@@ -9,33 +9,32 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CharacterTableViewCell" rowHeight="135" id="KGk-i7-Jjw" customClass="CharacterTableViewCell" customModule="Test_Project" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="436" height="135"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CharacterTableViewCell" rowHeight="230" id="KGk-i7-Jjw" customClass="CharacterTableViewCell" customModule="Test_Project" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="462" height="56"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="436" height="135"/>
+                <rect key="frame" x="0.0" y="0.0" width="462" height="56"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rT5-Vt-CXf">
-                        <rect key="frame" x="8" y="8" width="119" height="119"/>
+                        <rect key="frame" x="16" y="8" width="40" height="40"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="rT5-Vt-CXf" secondAttribute="height" multiplier="1:1" id="XQL-gk-NSp"/>
+                            <constraint firstAttribute="width" constant="40" id="Zjl-un-Z4o"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3es-TD-f8e">
-                        <rect key="frame" x="143" y="58.5" width="285" height="18.5"/>
+                        <rect key="frame" x="64" y="8" width="37" height="18.5"/>
                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="3es-TD-f8e" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="3CH-E0-reU"/>
-                    <constraint firstAttribute="bottom" secondItem="rT5-Vt-CXf" secondAttribute="bottom" constant="8" id="7a7-xB-GFy"/>
-                    <constraint firstItem="rT5-Vt-CXf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="J1A-Jp-hPm"/>
-                    <constraint firstItem="rT5-Vt-CXf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="a5I-rc-VWi"/>
-                    <constraint firstAttribute="trailing" secondItem="3es-TD-f8e" secondAttribute="trailing" constant="8" id="dy8-cq-j02"/>
-                    <constraint firstItem="3es-TD-f8e" firstAttribute="leading" secondItem="rT5-Vt-CXf" secondAttribute="trailing" constant="16" id="hvJ-c7-Xkc"/>
+                    <constraint firstAttribute="bottom" secondItem="rT5-Vt-CXf" secondAttribute="bottom" constant="8" id="0Y8-Jr-vvn"/>
+                    <constraint firstItem="rT5-Vt-CXf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Cs6-xl-tt8"/>
+                    <constraint firstItem="rT5-Vt-CXf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="EMX-Fm-nc3"/>
+                    <constraint firstItem="3es-TD-f8e" firstAttribute="top" secondItem="rT5-Vt-CXf" secondAttribute="top" id="NIs-CW-Jac"/>
+                    <constraint firstItem="3es-TD-f8e" firstAttribute="leading" secondItem="rT5-Vt-CXf" secondAttribute="trailing" constant="8" id="dM3-wv-gfJ"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -43,7 +42,7 @@
                 <outlet property="icon" destination="rT5-Vt-CXf" id="5kQ-VM-bPX"/>
                 <outlet property="titleLabel" destination="3es-TD-f8e" id="apG-TW-ang"/>
             </connections>
-            <point key="canvasLocation" x="328.98550724637681" y="34.486607142857139"/>
+            <point key="canvasLocation" x="346.37681159420293" y="65.625"/>
         </tableViewCell>
     </objects>
 </document>

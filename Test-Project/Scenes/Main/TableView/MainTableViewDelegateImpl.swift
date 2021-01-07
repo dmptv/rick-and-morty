@@ -18,18 +18,7 @@ final class MainTableViewDelegateImpl: NSObject {
 
 extension MainTableViewDelegateImpl: UITableViewDelegate {
 
-    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        56
-    }
-
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         56
     }
-    
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        let viewModel = sections[indexPath.section].rows[indexPath.row]
-        guard let cell = cell as? CharacterTableViewCell else { return }
-        cell.configure(with: viewModel)
-    }
-
 }
