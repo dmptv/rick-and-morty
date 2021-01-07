@@ -29,7 +29,7 @@ extension MainTableViewDataSourceImpl: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch sections[indexPath.section].rows[indexPath.row] {
         case .character:
-            let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "Main", for: indexPath)
+            let cell: UITableViewCell = tableView.dequeueReusableCell(for: indexPath)
             return cell
         }
     }
