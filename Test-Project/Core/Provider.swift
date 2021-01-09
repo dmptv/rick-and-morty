@@ -5,20 +5,38 @@
 //  Created by Kanat on 06.01.2021.
 //
 
-import Alamofire
+import Foundation
 
 protocol MainProvider {
-   
+    func getCharacters(_ completion: @escaping ([CharacterDataModel]?, String?) -> Void)
 }
 
 final class Provider {
-    let alamofireNetwork: AlamofireNetwork
+    let network: Network
 
-    init(alamofireNetwork: AlamofireNetwork) {
-        self.alamofireNetwork = alamofireNetwork
+    init(network: Network) {
+        self.network = network
     }
 }
 
 extension Provider: MainProvider {
-    
+    func getCharacters(_ completion: @escaping ([CharacterDataModel]?, String?) -> Void) {
+        let url = "https://rickandmortyapi.com/api/character"
+        
+        network.request(url) { result in
+            switch result {
+            case .success(let data):
+                do {
+                    let parsedResult: CharacterCharactersResponse = try JSONDecoder().decode(CharacterCharactersResponse.self, from: data)
+                    completion(parsedResult.results, nil)
+                    
+                } catch let error {
+                    completion(nil, error.localizedDescription)
+                }
+            case .failure(let error):
+                completion(nil, error.localizedDescription)
+            }
+            
+        }
+    }
 }

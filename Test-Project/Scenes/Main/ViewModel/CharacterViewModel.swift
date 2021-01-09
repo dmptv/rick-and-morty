@@ -8,15 +8,13 @@
 import UIKit
 
 protocol CharacterViewModelProtocol {
-    var id: String? { get }
+    var id: Int? { get }
     var name: String? { get }
-    var image: UIImage? { get }
-    
+    var image: URL? { get }
 }
 
-
 struct CharacterViewModel: CharacterViewModelProtocol {
-    var id: String? {
+    var id: Int? {
         character.id
     }
     
@@ -24,8 +22,8 @@ struct CharacterViewModel: CharacterViewModelProtocol {
         character.name
     }
     
-    var image: UIImage? {
-        UIImage(named: "test")
+    var image: URL? {
+        URL(string: character.image)
     }
     
     private let character: CharacterDataModel

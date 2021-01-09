@@ -15,7 +15,7 @@
 		0F547B0F25A5CF3D001AD526 /* MainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F547B0E25A5CF3D001AD526 /* MainStore.swift */; };
 		0F547B1425A5D490001AD526 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F547B1325A5D490001AD526 /* Observable.swift */; };
 		0F547B1825A5D507001AD526 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F547B1725A5D507001AD526 /* Provider.swift */; };
-		0F547B1C25A5D5A2001AD526 /* AlamofireNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F547B1B25A5D5A2001AD526 /* AlamofireNetwork.swift */; };
+		0F547B1C25A5D5A2001AD526 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F547B1B25A5D5A2001AD526 /* Network.swift */; };
 		0F547B2025A5DCFB001AD526 /* TableView+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F547B1F25A5DCFB001AD526 /* TableView+Extention.swift */; };
 		0F547B2425A5E746001AD526 /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F547B2325A5E746001AD526 /* CharacterViewModel.swift */; };
 		0F80A97F25A72687002E8316 /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F80A97D25A72687002E8316 /* CharacterTableViewCell.swift */; };
@@ -46,7 +46,7 @@
 		0F547B0E25A5CF3D001AD526 /* MainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStore.swift; sourceTree = "<group>"; };
 		0F547B1325A5D490001AD526 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		0F547B1725A5D507001AD526 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
-		0F547B1B25A5D5A2001AD526 /* AlamofireNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNetwork.swift; sourceTree = "<group>"; };
+		0F547B1B25A5D5A2001AD526 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		0F547B1F25A5DCFB001AD526 /* TableView+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView+Extention.swift"; sourceTree = "<group>"; };
 		0F547B2325A5E746001AD526 /* CharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
 		0F80A97D25A72687002E8316 /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
@@ -123,17 +123,17 @@
 			isa = PBXGroup;
 			children = (
 				0F547B1725A5D507001AD526 /* Provider.swift */,
-				0F547B1A25A5D595001AD526 /* Alamofire */,
+				0F547B1A25A5D595001AD526 /* Network */,
 			);
 			name = Providers;
 			sourceTree = "<group>";
 		};
-		0F547B1A25A5D595001AD526 /* Alamofire */ = {
+		0F547B1A25A5D595001AD526 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				0F547B1B25A5D5A2001AD526 /* AlamofireNetwork.swift */,
+				0F547B1B25A5D5A2001AD526 /* Network.swift */,
 			);
-			name = Alamofire;
+			name = Network;
 			sourceTree = "<group>";
 		};
 		0F547B2625A5E74E001AD526 /* ViewModel */ = {
@@ -404,7 +404,7 @@
 				0F8E744C25A49CD700A43121 /* CoordinatorFactory.swift in Sources */,
 				0F547AE825A5833D001AD526 /* BaseNavigationController.swift in Sources */,
 				0F547B0B25A5CF0F001AD526 /* MainTableViewDataSourceImpl.swift in Sources */,
-				0F547B1C25A5D5A2001AD526 /* AlamofireNetwork.swift in Sources */,
+				0F547B1C25A5D5A2001AD526 /* Network.swift in Sources */,
 				0F547B2025A5DCFB001AD526 /* TableView+Extention.swift in Sources */,
 				0F8E743C25A48A7200A43121 /* CompositeAppDelegateConfigurator.swift in Sources */,
 				0F547B2425A5E746001AD526 /* CharacterViewModel.swift in Sources */,

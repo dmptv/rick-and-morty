@@ -19,6 +19,6 @@ final class MainTableViewDelegateImpl: NSObject {
 extension MainTableViewDelegateImpl: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        56
+        80
     }
 }

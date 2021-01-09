@@ -16,14 +16,14 @@ final class BaseAssembly: Assembly {
     }
     
     private func assembleNetwork(_ container: Container) {
-        container.register(AlamofireNetwork.self) { _ in
-            AlamofireNetwork()
+        container.register(Network.self) { _ in
+            Network()
         }.inObjectScope(.container)
     }
 
     private func assembleProviders(_ container: Container) {
         container.register(Provider.self) { r in
-            Provider(alamofireNetwork: r.resolve(AlamofireNetwork.self)!)
+            Provider(network: r.resolve(Network.self)!)
         }.inObjectScope(.container)
     }
 }

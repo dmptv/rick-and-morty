@@ -25,6 +25,7 @@ final class MainStore {
     }
     
     private let provider: MainProvider
+    private var charactersArr: [CharacterDataModel] = []
     
     @Observable private(set) var state: State?
     
@@ -41,17 +42,20 @@ final class MainStore {
     }
     
     private func getCharacters() {
-        setupSections()
+        provider.getCharacters { [self] characters, errorMessage  in
+            
+            if let characters = characters {
+                self.charactersArr.append(contentsOf: characters)
+                self.setupSections()
+            } else {
+                state = .error(message: errorMessage)
+            }
+        }
+        
     }
     
     private func setupSections() {
-        let characters: [CharacterDataModel] = [
-            CharacterDataModel(id: "12", name: "12", image: "12"),
-            CharacterDataModel(id: "12", name: "12", image: "12"),
-            CharacterDataModel(id: "12", name: "12", image: "12")
-        ]
-        
-        let viewModels: [CharacterViewModelProtocol] = characters.map { char in
+        let viewModels: [CharacterViewModelProtocol] = self.charactersArr.map { char in
             CharacterViewModel(character: char)
         }
         

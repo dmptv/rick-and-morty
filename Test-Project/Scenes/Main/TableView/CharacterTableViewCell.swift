@@ -5,6 +5,7 @@
 //  Created by Kanat on 07.01.2021.
 //
 
+import Kingfisher
 import UIKit
 
 class CharacterTableViewCell: UITableViewCell {
@@ -18,7 +19,7 @@ class CharacterTableViewCell: UITableViewCell {
     }
 
     func configure(with viewModel: CharacterViewModelProtocol) {
-        icon.image = viewModel.image
+        icon.kf.setImage(with: viewModel.image)
         titleLabel.text = viewModel.name
     }
     
