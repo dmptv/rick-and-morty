@@ -7,7 +7,7 @@
 
 import Alamofire
 
-final class AlamofireNetwork {
+final class Network {
     
     init() { }
     
