@@ -10,6 +10,7 @@ def core_pods
 pod 'Kingfisher', '5.15.5'
 pod 'Swinject', '2.7.1'
 pod 'SwiftLint'
+pod 'Disk', '0.6.4'
 
 end
 

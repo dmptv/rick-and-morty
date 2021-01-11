@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.2.2)
+  - Disk (0.6.4)
   - Kingfisher (5.15.5):
     - Kingfisher/Core (= 5.15.5)
   - Kingfisher/Core (5.15.5)
@@ -8,6 +9,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (= 5.2.2)
+  - Disk (= 0.6.4)
   - Kingfisher (= 5.15.5)
   - SwiftLint
   - Swinject (= 2.7.1)
@@ -15,16 +17,18 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Disk
     - Kingfisher
     - SwiftLint
     - Swinject
 
 SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  Disk: dcee5c2e98fb72f9a924cde8da8435b08244a80e
   Kingfisher: e3ec347a5ab8817b7585ef46923a2d2b9a7d8fbe
   SwiftLint: 4fa9579c63416865179bc416f0a92d55f009600d
   Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
 
-PODFILE CHECKSUM: 55ceafec42591ab7a5c5d69c6a3fc13660bc2ee6
+PODFILE CHECKSUM: 7f7998cdd2939ea55fb0eb3220a62f9e49537f17
 
 COCOAPODS: 1.10.0
