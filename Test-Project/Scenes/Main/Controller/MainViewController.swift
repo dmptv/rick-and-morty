@@ -7,7 +7,6 @@
 
 import UIKit
 
-//TODO: - dlegate
 
 protocol MainNavigationDelegate: class {
     
