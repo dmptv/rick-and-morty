@@ -43,7 +43,6 @@ final class MainStore {
     
     private func getCharacters() {
         provider.getCharacters { [self] characters, errorMessage  in
-            
             if let characters = characters {
                 self.charactersArr.append(contentsOf: characters)
                 self.setupSections()
@@ -61,6 +60,7 @@ final class MainStore {
         
         let rows: [CharacterViewModelProtocol] = viewModels
         let charSection = CharactersSection(rows: rows)
+        state = .loadingFinished
         state = .sections(sections: [charSection])
     }
         

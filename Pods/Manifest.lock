@@ -4,6 +4,17 @@ PODS:
   - Kingfisher (5.15.5):
     - Kingfisher/Core (= 5.15.5)
   - Kingfisher/Core (5.15.5)
+  - MaterialComponents/ActivityIndicator (117.0.0):
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Application
+    - MDFInternationalization
+    - MotionAnimator (~> 2.0)
+  - MaterialComponents/Palettes (117.0.0)
+  - MaterialComponents/private/Application (117.0.0)
+  - MDFInternationalization (2.0.0)
+  - MotionAnimator (2.8.1):
+    - MotionInterchange (~> 1.6)
+  - MotionInterchange (1.6.0)
   - SwiftLint (0.42.0)
   - Swinject (2.7.1)
 
@@ -11,6 +22,7 @@ DEPENDENCIES:
   - Alamofire (= 5.2.2)
   - Disk (= 0.6.4)
   - Kingfisher (= 5.15.5)
+  - MaterialComponents/ActivityIndicator (= 117.0.0)
   - SwiftLint
   - Swinject (= 2.7.1)
 
@@ -19,6 +31,10 @@ SPEC REPOS:
     - Alamofire
     - Disk
     - Kingfisher
+    - MaterialComponents
+    - MDFInternationalization
+    - MotionAnimator
+    - MotionInterchange
     - SwiftLint
     - Swinject
 
@@ -26,9 +42,13 @@ SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
   Disk: dcee5c2e98fb72f9a924cde8da8435b08244a80e
   Kingfisher: e3ec347a5ab8817b7585ef46923a2d2b9a7d8fbe
+  MaterialComponents: 29320b6a89c4c90e41c7a41fc70e91127ac34161
+  MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
+  MotionAnimator: ee16aa30567c5bae0fb2750c132915829cfaaf8a
+  MotionInterchange: ead0e3ae1f3a5fb539e289debbc7ae036160a10d
   SwiftLint: 4fa9579c63416865179bc416f0a92d55f009600d
   Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
 
-PODFILE CHECKSUM: 7f7998cdd2939ea55fb0eb3220a62f9e49537f17
+PODFILE CHECKSUM: 6cd1021900137e78c50f62ab432abb887c830243
 
 COCOAPODS: 1.10.0
