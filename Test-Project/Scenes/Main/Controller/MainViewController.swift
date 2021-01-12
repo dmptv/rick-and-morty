@@ -78,11 +78,9 @@ final class MainViewController: BaseViewController {
             guard let state = state else { return }
             switch state {
             case .loading:
-//                ProgressHud.startAnimating()
-                break
+                ProgressHud.startAnimating()
             case .loadingFinished:
-//                ProgressHud.stopAnimating()
-                break
+                ProgressHud.stopAnimating()
             case let .sections(sections):
                 vc.tableViewDelegateImpl.sections = sections
                 vc.tableViewDataSourceImpl.sections = sections

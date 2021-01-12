@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17506"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProgressHudContainerView" customModule="Test_Project" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="673" height="678"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wZl-S1-oxA">
+                    <rect key="frame" x="0.0" y="0.0" width="673" height="678"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7yL-7H-qBS" customClass="MDCActivityIndicator">
+                            <rect key="frame" x="312.5" y="315" width="48" height="48"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="48" id="8uT-ko-iRP"/>
+                                <constraint firstAttribute="height" constant="48" id="TWZ-Gx-V3k"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="7yL-7H-qBS" firstAttribute="centerX" secondItem="wZl-S1-oxA" secondAttribute="centerX" id="dBm-Vh-Bbh"/>
+                        <constraint firstItem="7yL-7H-qBS" firstAttribute="centerY" secondItem="wZl-S1-oxA" secondAttribute="centerY" id="fQU-TG-uH2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="wZl-S1-oxA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="IXA-rb-5iy"/>
+                <constraint firstAttribute="trailing" secondItem="wZl-S1-oxA" secondAttribute="trailing" id="Qz0-dJ-sJQ"/>
+                <constraint firstItem="wZl-S1-oxA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="h8k-aO-IaN"/>
+                <constraint firstAttribute="bottom" secondItem="wZl-S1-oxA" secondAttribute="bottom" id="hcr-8l-MKB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="activityIndicator" destination="7yL-7H-qBS" id="zKG-W9-3ey"/>
+                <outlet property="backgroundView" destination="wZl-S1-oxA" id="SZm-PR-hAr"/>
+            </connections>
+            <point key="canvasLocation" x="241.30434782608697" y="30.803571428571427"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
