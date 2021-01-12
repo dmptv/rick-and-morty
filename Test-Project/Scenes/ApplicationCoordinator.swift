@@ -20,18 +20,42 @@ final class ApplicationCoordinator: Coordinator {
     }
 
     override func start() {
-        showMain()
+        let home = runMainFlow()
+        makeTabbar([home])
     }
 
-    private func showMain() {
-        let main = moduleFactory.makeMain(navigationDelegate: self)
-        router.setRootModule(main, isNavigationBarHidden: false)
+    private func makeTabbar(_ viewControllers: [UIViewController]) {
+        let tabbar = moduleFactory.makeTabbar(viewControllers: viewControllers, navigationDelegate: self)
+        router.setRootModule(tabbar, isNavigationBarHidden: false)
+    }
+    
+    private func runMainFlow() -> UIViewController {
+        let (coordinator, module) = coordinatorFactory.makeMain(delegate: self)
+        coordinator.start()
+        addDependency(coordinator)
+        return module
     }
 
 }
 
+extension ApplicationCoordinator: MainCoordinatorDelegate {
+    func didTapCharacter(_ coordinator: MainCoordinator) {
+        
+    }
+    
+    
+}
+
 // MARK: - MainNavigationDelegate
 
-extension ApplicationCoordinator: MainNavigationDelegate {
+extension ApplicationCoordinator: TabbarControllerDelegate {
+    func onHomeFlowSelect(_ viewController: TabbarController) {
+        
+    }
+    
+    func onSecondFlowSelect(_ viewController: TabbarController) {
+        
+    }
+    
     
 }
