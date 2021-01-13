@@ -335,7 +335,7 @@
 		0F8E73F725A485E800A43121 = {
 			isa = PBXGroup;
 			children = (
-				0F8E740225A485E800A43121 /* Test-Project */,
+				0F8E740225A485E800A43121 /* Rick-and-Morty */,
 				0F8E740125A485E800A43121 /* Products */,
 				271988E7495ADF4C30F5B18F /* Pods */,
 				B28955BAE94511B3E7F730E4 /* Frameworks */,
@@ -350,7 +350,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0F8E740225A485E800A43121 /* Test-Project */ = {
+		0F8E740225A485E800A43121 /* Rick-and-Morty */ = {
 			isa = PBXGroup;
 			children = (
 				0F8E743025A4891900A43121 /* Application */,
@@ -358,7 +358,7 @@
 				0F8E743325A4898400A43121 /* Scenes */,
 				0F8E743225A4896800A43121 /* SupportingFiles */,
 			);
-			path = "Test-Project";
+			path = "Rick-and-Morty";
 			sourceTree = "<group>";
 		};
 		0F8E743025A4891900A43121 /* Application */ = {
@@ -744,7 +744,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C5PU6T6826;
-				INFOPLIST_FILE = "Test-Project/SupportingFiles/Info.plist";
+				INFOPLIST_FILE = "Rick-and-Morty/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -764,7 +764,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C5PU6T6826;
-				INFOPLIST_FILE = "Test-Project/SupportingFiles/Info.plist";
+				INFOPLIST_FILE = "Rick-and-Morty/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

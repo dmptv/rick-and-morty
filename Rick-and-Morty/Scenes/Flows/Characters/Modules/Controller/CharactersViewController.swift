@@ -95,7 +95,7 @@ final class CharactersViewController: BaseViewController {
     }
 
     private func updateColors() {
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor(named: "AccentColor")
     }
     
     deinit {

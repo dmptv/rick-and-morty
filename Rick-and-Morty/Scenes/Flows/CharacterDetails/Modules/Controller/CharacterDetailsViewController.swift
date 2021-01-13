@@ -5,6 +5,7 @@
 //  Created by Kanat on 13.01.2021.
 //
 
+import Kingfisher
 import UIKit
 
 // swiftlint:disable all
@@ -12,9 +13,13 @@ protocol CharacterDetailsNavigationDelegate: class {
     
 }
 
-class CharacterDetailsViewController: UIViewController {
+class CharacterDetailsViewController: BaseViewController {
     private let store: CharacterDetailsStore
     private weak var navigationDelegate: CharacterDetailsNavigationDelegate?
+    
+    @IBOutlet weak var icon: UIImageView!
+    @IBOutlet weak var name: UILabel!
+    
     
     init(store: CharacterDetailsStore, navigationDelegate: CharacterDetailsNavigationDelegate) {
         self.store = store
@@ -36,12 +41,6 @@ class CharacterDetailsViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(true, animated: animated)
-    }
-
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        navigationController?.setNavigationBarHidden(false, animated: animated)
     }
 
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
@@ -58,17 +57,18 @@ class CharacterDetailsViewController: UIViewController {
             guard let state = state else { return }
             switch state {
             case .loading:
-                ProgressHud.startAnimating()
-            case .loadingFinished:
-                ProgressHud.stopAnimating()
-            case let .error(message):
-//                vc.showToast(category: .error, message: message)
+                break
+            case let .loadingFinished(character):
+                self.icon.kf.setImage(with: URL(string: character.image))
+                self.name.text = character.name
+            case let .error(_):
                 break
             }
         }
     }
 
     private func updateColors() {
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor.init(named: "AccentColor")
+        name.textColor = UIColor(named: "TextColor")
     }
 }
