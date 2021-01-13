@@ -1,5 +1,5 @@
 //
-//  MainStore.swift
+//  CharactersStore.swift
 //  Test-Project
 //
 //  Created by Kanat on 06.01.2021.
@@ -11,7 +11,7 @@ struct CharactersSection {
     let rows: [CharacterViewModelProtocol]
 }
 
-final class MainStore {
+final class CharactersStore {
     
     enum Action {
         case didLoadView

@@ -1,5 +1,5 @@
 //
-//  MainViewController.swift
+//  CharactersViewController.swift
 //  Test-Project
 //
 //  Created by Kanat on 05.01.2021.
@@ -8,7 +8,7 @@
 import UIKit
 
 
-protocol MainNavigationDelegate: class {
+protocol CharactersNavigationDelegate: class {
     
 }
 
@@ -16,15 +16,15 @@ private enum Constants {
     
 }
 
-final class MainViewController: BaseViewController {
-    private let store: MainStore
-    private weak var navigationDelegate: MainNavigationDelegate?
-    private let tableViewDelegateImpl: MainTableViewDelegateImpl
-    private let tableViewDataSourceImpl: MainTableViewDataSourceImpl
+final class CharactersViewController: BaseViewController {
+    private let store: CharactersStore
+    private weak var navigationDelegate: CharactersNavigationDelegate?
+    private let tableViewDelegateImpl: CharactersTableViewDelegateImpl
+    private let tableViewDataSourceImpl: CharactersTableViewDataSourceImpl
     
     @IBOutlet private var tableView: UITableView!
     
-    init(store: MainStore, navigationDelegate: MainNavigationDelegate) {
+    init(store: CharactersStore, navigationDelegate: CharactersNavigationDelegate) {
         self.store = store
         self.navigationDelegate = navigationDelegate
         tableViewDataSourceImpl = .init(store: store)

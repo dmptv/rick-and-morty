@@ -1,5 +1,5 @@
 //
-//  MainTableViewDelegateImpl.swift
+//  CharactersTableViewDelegateImpl.swift
 //  Test-Project
 //
 //  Created by Kanat on 06.01.2021.
@@ -7,16 +7,16 @@
 
 import UIKit
 
-final class MainTableViewDelegateImpl: NSObject {
+final class CharactersTableViewDelegateImpl: NSObject {
     var sections: [CharactersSection] = []
-    private let store: MainStore
+    private let store: CharactersStore
 
-    init(store: MainStore) {
+    init(store: CharactersStore) {
         self.store = store
     }
 }
 
-extension MainTableViewDelegateImpl: UITableViewDelegate {
+extension CharactersTableViewDelegateImpl: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         80
