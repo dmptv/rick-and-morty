@@ -33,9 +33,12 @@ final class CharacterDetailsCoordinator: Coordinator {
     }
     
     private func showCharacterDetails() {
-        let vc = UIViewController()
-        vc.view.backgroundColor = .blue
+        let vc = moduleFactory.makeCharacterDetails(character: character, navigationDelegate: self)
         router.push(vc)
     }
+    
+}
+
+extension CharacterDetailsCoordinator: CharacterDetailsNavigationDelegate {
     
 }

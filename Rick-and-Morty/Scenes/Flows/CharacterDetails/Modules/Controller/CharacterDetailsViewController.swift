@@ -12,7 +12,7 @@ protocol CharacterDetailsNavigationDelegate: class {
     
 }
 
-class CharacterDetailsViewController: UIViewController {
+class CharacterDetailsViewController: BaseViewController {
     private let store: CharacterDetailsStore
     private weak var navigationDelegate: CharacterDetailsNavigationDelegate?
     
@@ -36,12 +36,6 @@ class CharacterDetailsViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(true, animated: animated)
-    }
-
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        navigationController?.setNavigationBarHidden(false, animated: animated)
     }
 
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
@@ -69,6 +63,6 @@ class CharacterDetailsViewController: UIViewController {
     }
 
     private func updateColors() {
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor.init(named: "AccentColor")
     }
 }

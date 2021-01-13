@@ -20,9 +20,13 @@ final class CharacterDetailsStore {
         case error(message: String?)
     }
     
+    private var character: CharacterDataModel
+    
     @Observable private(set) var state: State?
     
-    init() {}
+    init(character: CharacterDataModel) {
+        self.character = character
+    }
     
     func dispatch(action: Action) {
         switch action {

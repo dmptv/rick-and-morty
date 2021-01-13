@@ -15,7 +15,12 @@ class CharacterTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        updateColors()
+    }
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        updateColors()
     }
 
     func configure(with viewModel: CharacterViewModelProtocol) {
@@ -23,4 +28,8 @@ class CharacterTableViewCell: UITableViewCell {
         titleLabel.text = viewModel.name
     }
     
+    private func updateColors() {
+        titleLabel.textColor = UIColor(named: "TextColor")
+        contentView.backgroundColor = UIColor(named: "AccentColor")
+    }
 }
