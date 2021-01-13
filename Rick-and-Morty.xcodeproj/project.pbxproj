@@ -72,7 +72,7 @@
 		0F80AAD925ADD85E002E8316 /* CharactersCoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersCoordinatorFactory.swift; sourceTree = "<group>"; };
 		0F80AADC25ADD86F002E8316 /* CharactersModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersModuleFactory.swift; sourceTree = "<group>"; };
 		0F80AAEC25AEC64C002E8316 /* CharactersCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersCoordinator.swift; sourceTree = "<group>"; };
-		0F8E740025A485E800A43121 /* Test-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F8E740025A485E800A43121 /* Rick-and-Morty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rick-and-Morty.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F8E740325A485E800A43121 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F8E740C25A485E800A43121 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F8E740F25A485E800A43121 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -271,7 +271,7 @@
 		0F8E740125A485E800A43121 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0F8E740025A485E800A43121 /* Test-Project.app */,
+				0F8E740025A485E800A43121 /* Rick-and-Morty.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -360,9 +360,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0F8E73FF25A485E800A43121 /* Test-Project */ = {
+		0F8E73FF25A485E800A43121 /* Rick-and-Morty */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0F8E741425A485E800A43121 /* Build configuration list for PBXNativeTarget "Test-Project" */;
+			buildConfigurationList = 0F8E741425A485E800A43121 /* Build configuration list for PBXNativeTarget "Rick-and-Morty" */;
 			buildPhases = (
 				4D1F0E9D5A09C6031AC2FC78 /* [CP] Check Pods Manifest.lock */,
 				0F8E742825A4873D00A43121 /* Swiftlint */,
@@ -375,9 +375,9 @@
 			);
 			dependencies = (
 			);
-			name = "Test-Project";
+			name = "Rick-and-Morty";
 			productName = "Test-Project";
-			productReference = 0F8E740025A485E800A43121 /* Test-Project.app */;
+			productReference = 0F8E740025A485E800A43121 /* Rick-and-Morty.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -394,7 +394,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0F8E73FB25A485E800A43121 /* Build configuration list for PBXProject "Test-Project" */;
+			buildConfigurationList = 0F8E73FB25A485E800A43121 /* Build configuration list for PBXProject "Rick-and-Morty" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -407,7 +407,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0F8E73FF25A485E800A43121 /* Test-Project */,
+				0F8E73FF25A485E800A43121 /* Rick-and-Morty */,
 			);
 		};
 /* End PBXProject section */
@@ -699,7 +699,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0F8E73FB25A485E800A43121 /* Build configuration list for PBXProject "Test-Project" */ = {
+		0F8E73FB25A485E800A43121 /* Build configuration list for PBXProject "Rick-and-Morty" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0F8E741225A485E800A43121 /* Debug */,
@@ -708,7 +708,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0F8E741425A485E800A43121 /* Build configuration list for PBXNativeTarget "Test-Project" */ = {
+		0F8E741425A485E800A43121 /* Build configuration list for PBXNativeTarget "Rick-and-Morty" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0F8E741525A485E800A43121 /* Debug */,
