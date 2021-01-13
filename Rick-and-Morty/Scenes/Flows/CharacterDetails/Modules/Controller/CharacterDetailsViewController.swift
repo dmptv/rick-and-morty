@@ -5,6 +5,7 @@
 //  Created by Kanat on 13.01.2021.
 //
 
+import Kingfisher
 import UIKit
 
 // swiftlint:disable all
@@ -15,6 +16,10 @@ protocol CharacterDetailsNavigationDelegate: class {
 class CharacterDetailsViewController: BaseViewController {
     private let store: CharacterDetailsStore
     private weak var navigationDelegate: CharacterDetailsNavigationDelegate?
+    
+    @IBOutlet weak var icon: UIImageView!
+    @IBOutlet weak var name: UILabel!
+    
     
     init(store: CharacterDetailsStore, navigationDelegate: CharacterDetailsNavigationDelegate) {
         self.store = store
@@ -52,11 +57,11 @@ class CharacterDetailsViewController: BaseViewController {
             guard let state = state else { return }
             switch state {
             case .loading:
-                ProgressHud.startAnimating()
-            case .loadingFinished:
-                ProgressHud.stopAnimating()
-            case let .error(message):
-//                vc.showToast(category: .error, message: message)
+                break
+            case let .loadingFinished(character):
+                self.icon.kf.setImage(with: URL(string: character.image))
+                self.name.text = character.name
+            case let .error(_):
                 break
             }
         }
@@ -64,5 +69,6 @@ class CharacterDetailsViewController: BaseViewController {
 
     private func updateColors() {
         view.backgroundColor = UIColor.init(named: "AccentColor")
+        name.textColor = UIColor(named: "TextColor")
     }
 }

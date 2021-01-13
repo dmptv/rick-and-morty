@@ -16,7 +16,7 @@ final class CharacterDetailsStore {
     // swiftlint:disable enum_case_associated_values_count function_body_length
     enum State {
         case loading
-        case loadingFinished
+        case loadingFinished(character: CharacterDataModel)
         case error(message: String?)
     }
     
@@ -37,6 +37,6 @@ final class CharacterDetailsStore {
     }
     
     private func configureView() {
-        state = .loadingFinished
+        state = .loadingFinished(character: character)
     }
 }
