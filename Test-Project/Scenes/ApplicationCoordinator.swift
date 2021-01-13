@@ -26,7 +26,7 @@ final class ApplicationCoordinator: Coordinator {
 
     private func makeTabbar(_ viewControllers: [UIViewController]) {
         let tabbar = moduleFactory.makeTabbar(viewControllers: viewControllers, navigationDelegate: self)
-        router.setRootModule(tabbar, isNavigationBarHidden: false)
+        router.setRootModule(tabbar, isNavigationBarHidden: true)
     }
     
     private func runMainFlow() -> UIViewController {

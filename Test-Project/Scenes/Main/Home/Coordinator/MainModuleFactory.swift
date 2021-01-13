@@ -15,7 +15,9 @@ final class MainModuleFactory {
         self.assembler = assembler
     }
 
-    
-    
-   
+    func makeMain(navigationDelegate: MainNavigationDelegate) -> UIViewController {
+        let store = MainStore(provider: assembler.resolver.resolve(Provider.self)!)
+        let mainViewController = MainViewController(store: store, navigationDelegate: navigationDelegate)
+        return mainViewController
+    }
 }

@@ -19,5 +19,4 @@ final class ModuleFactory {
         let controller = TabbarController(viewControllers: viewControllers, navigationDelegate: navigationDelegate)
         return controller
     }
-    
 }

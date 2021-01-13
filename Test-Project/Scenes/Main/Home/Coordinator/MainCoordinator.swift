@@ -30,8 +30,12 @@ final class MainCoordinator: Coordinator {
     }
     
     private func showMain() {
-//        let home = moduleFactory.makeHome(navigationDelegate: self)
-//        router.setRootModule(home)
+        let home = moduleFactory.makeMain(navigationDelegate: self)
+        router.setRootModule(home)
     }
+    
+}
+
+extension MainCoordinator: MainNavigationDelegate {
     
 }
