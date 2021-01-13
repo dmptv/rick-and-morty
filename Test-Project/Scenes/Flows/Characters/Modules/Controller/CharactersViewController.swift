@@ -9,7 +9,7 @@ import UIKit
 
 
 protocol CharactersNavigationDelegate: class {
-    
+    func characterDidSelect(_ viewController: CharactersViewController, selectedCharacter: CharacterDataModel)
 }
 
 private enum Constants {
@@ -88,6 +88,8 @@ final class CharactersViewController: BaseViewController {
             case let .error(message):
 //                vc.showToast(category: .error, message: message)
                 print("error", message as Any)
+            case let .selectedCharacter(charcater):
+                vc.navigationDelegate?.characterDidSelect(self, selectedCharacter: charcater)
             }
         }
     }

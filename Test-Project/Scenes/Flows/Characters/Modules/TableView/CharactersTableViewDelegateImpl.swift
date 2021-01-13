@@ -17,6 +17,10 @@ final class CharactersTableViewDelegateImpl: NSObject {
 }
 
 extension CharactersTableViewDelegateImpl: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        store.dispatch(action: .didSelectRow(indexPath: indexPath))
+    }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         80

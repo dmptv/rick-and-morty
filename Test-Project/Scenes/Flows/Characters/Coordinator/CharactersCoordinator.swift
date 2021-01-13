@@ -34,8 +34,26 @@ final class CharactersCoordinator: Coordinator {
         router.setRootModule(home)
     }
     
+    private func runCharacterDetailsFlow(_ selectedCharacter: CharacterDataModel) {
+        let coordinator = coordinatorFactory.makeCharacterDetails(character: selectedCharacter, delegate: self, router: router)
+        addDependency(coordinator)
+        coordinator.start()
+    }
+    
 }
 
 extension CharactersCoordinator: CharactersNavigationDelegate {
+    func characterDidSelect(_ viewController: CharactersViewController, selectedCharacter: CharacterDataModel) {
+        runCharacterDetailsFlow(selectedCharacter)
+    }
+}
+
+extension CharactersCoordinator: CharacterDetailsCoordinatorDelegate {
+    func didClose(_ coordinator: CharacterDetailsCoordinator) {
+        
+    }
     
+    func didFinish(_ coordinator: CharacterDetailsCoordinator) {
+        
+    }
 }

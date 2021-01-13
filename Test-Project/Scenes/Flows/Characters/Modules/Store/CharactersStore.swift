@@ -15,6 +15,7 @@ final class CharactersStore {
     
     enum Action {
         case didLoadView
+        case didSelectRow(indexPath: IndexPath)
     }
 
     enum State {
@@ -22,10 +23,11 @@ final class CharactersStore {
         case loadingFinished
         case error(message: String?)
         case sections(sections: [CharactersSection])
+        case selectedCharacter(_ character: CharacterDataModel)
     }
     
     private let provider: MainProvider
-    private var charactersArr: [CharacterDataModel] = []
+    private var allCharacters: [CharacterDataModel] = []
     
     @Observable private(set) var state: State?
     
@@ -38,13 +40,16 @@ final class CharactersStore {
         case .didLoadView:
             state = .loading
             getCharacters()
+        case .didSelectRow(indexPath: let indexPath):
+            let character = allCharacters[indexPath.row]
+            state = .selectedCharacter(character)
         }
     }
     
     private func getCharacters() {
         provider.getCharacters { [self] characters, errorMessage  in
             if let characters = characters {
-                self.charactersArr.append(contentsOf: characters)
+                self.allCharacters.append(contentsOf: characters)
                 self.setupSections()
             } else {
                 state = .error(message: errorMessage)
@@ -54,7 +59,7 @@ final class CharactersStore {
     }
     
     private func setupSections() {
-        let viewModels: [CharacterViewModelProtocol] = self.charactersArr.map { char in
+        let viewModels: [CharacterViewModelProtocol] = self.allCharacters.map { char in
             CharacterViewModel(character: char)
         }
         

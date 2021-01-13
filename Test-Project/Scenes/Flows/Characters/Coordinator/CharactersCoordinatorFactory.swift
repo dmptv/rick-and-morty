@@ -15,4 +15,13 @@ final class CharactersCoordinatorFactory {
         self.assembler = assembler
     }
 
+    func makeCharacterDetails(character: CharacterDataModel,
+                              delegate: CharacterDetailsCoordinatorDelegate,
+                              router: Router) -> Coordinator {
+        CharacterDetailsCoordinator(
+            character: character,
+            router: router,
+            assembler: assembler,
+            delegate: delegate)
+    }
 }
