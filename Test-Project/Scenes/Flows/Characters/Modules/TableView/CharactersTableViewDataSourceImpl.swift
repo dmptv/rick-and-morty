@@ -1,5 +1,5 @@
 //
-//  MainTableViewDataSourceImpl.swift
+//  CharactersTableViewDataSourceImpl.swift
 //  Test-Project
 //
 //  Created by Kanat on 06.01.2021.
@@ -7,17 +7,17 @@
 
 import UIKit
 
-final class MainTableViewDataSourceImpl: NSObject {
+final class CharactersTableViewDataSourceImpl: NSObject {
     var sections: [CharactersSection] = []
-    private let store: MainStore
+    private let store: CharactersStore
 
-    init(store: MainStore) {
+    init(store: CharactersStore) {
         self.store = store
     }
     
 }
 
-extension MainTableViewDataSourceImpl: UITableViewDataSource {
+extension CharactersTableViewDataSourceImpl: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         sections.count
     }

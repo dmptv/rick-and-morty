@@ -1,5 +1,5 @@
 //
-//  MainCoordinator.swift
+//  CharactersCoordinator.swift
 //  Test-Project
 //
 //  Created by Kanat on 12.01.2021.
@@ -9,13 +9,13 @@ import Swinject
 import UIKit
 
 protocol MainCoordinatorDelegate: class {
-    func didTapCharacter(_ coordinator: MainCoordinator)
+    func didTapCharacter(_ coordinator: CharactersCoordinator)
 }
 
 // swiftlint:disable file_length
-final class MainCoordinator: Coordinator {
-    private let coordinatorFactory: MainCoordinatorFactory
-    private let moduleFactory: MainModuleFactory
+final class CharactersCoordinator: Coordinator {
+    private let coordinatorFactory: CharactersCoordinatorFactory
+    private let moduleFactory: CharactersModuleFactory
     private weak var delegate: MainCoordinatorDelegate?
     
     init(router: Router, assembler: Assembler, delegate: MainCoordinatorDelegate) {
@@ -36,6 +36,6 @@ final class MainCoordinator: Coordinator {
     
 }
 
-extension MainCoordinator: MainNavigationDelegate {
+extension CharactersCoordinator: CharactersNavigationDelegate {
     
 }

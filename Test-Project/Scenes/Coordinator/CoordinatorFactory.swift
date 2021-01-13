@@ -18,7 +18,7 @@ final class CoordinatorFactory {
     
     func makeMain(delegate: MainCoordinatorDelegate) -> (coordinator: Coordinator, module: UIViewController) {
         let navigationController = BaseNavigationController()
-        let coordinator = MainCoordinator(router: Router(navigationController: navigationController), assembler: assembler, delegate: delegate)
+        let coordinator = CharactersCoordinator(router: Router(navigationController: navigationController), assembler: assembler, delegate: delegate)
         return (coordinator, navigationController)
     }
 }

@@ -39,7 +39,7 @@ final class ApplicationCoordinator: Coordinator {
 }
 
 extension ApplicationCoordinator: MainCoordinatorDelegate {
-    func didTapCharacter(_ coordinator: MainCoordinator) {
+    func didTapCharacter(_ coordinator: CharactersCoordinator) {
         
     }
     
