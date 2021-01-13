@@ -1,9 +1,6 @@
-
 inhibit_all_warnings!
 platform :ios, '12.0'
 use_frameworks!
-
-
 
 def core_pods
   pod 'Alamofire', '5.2.2'
@@ -15,9 +12,10 @@ pod 'MaterialComponents/ActivityIndicator', '117.0.0'
 
 end
 
-target 'Test-Project' do
-  core_pods
-end
+target 'Rick-and-Morty' do
+core_pods
+  end
+
 
 post_install do |pi|
     pi.pods_project.targets.each do |t|
