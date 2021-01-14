@@ -11,13 +11,20 @@ final class BaseAssembly: Assembly {
     init() {}
 
     func assemble(container: Container) {
-        assembleProviders(container)
+        assembleEnvironment(container)
         assembleNetwork(container)
+        assembleProviders(container)
+    }
+    
+    private func assembleEnvironment(_ container: Container) {
+        container.register(String.self, name: "baseUrl") { _ in
+            Environment.baseUrl
+        }
     }
     
     private func assembleNetwork(_ container: Container) {
-        container.register(Network.self) { _ in
-            Network()
+        container.register(Network.self) { r in
+            Network(baseUrl: r.resolve(String.self, name: "baseUrl")!)
         }.inObjectScope(.container)
     }
 

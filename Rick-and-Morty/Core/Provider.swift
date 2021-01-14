@@ -21,7 +21,7 @@ final class Provider {
 
 extension Provider: MainProvider {
     func getCharacters(_ page: Int, completion: @escaping (CharacterCharactersResponse?, String?) -> Void) {
-        let url = "https://rickandmortyapi.com/api/character/?page=\(page)"
+        let url = "/character/?page=\(page)"
         
         network.request(url) { result in
             switch result {

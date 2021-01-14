@@ -9,8 +9,11 @@ import Alamofire
 
 final class Network {
     typealias CompletionHandler = ((Result<Data, AFError>) -> Void)
+    let baseUrl: String
     
-    init() { }
+    init(baseUrl: String) {
+        self.baseUrl = baseUrl
+    }
     
     func request(_ url: String,
                  method: HTTPMethod = .get,
@@ -20,7 +23,7 @@ final class Network {
                  interceptor: RequestInterceptor? = nil,
                  completion: @escaping CompletionHandler) {
         
-        AF.request(url,
+        AF.request(self.baseUrl + url,
                    method: method,
                    parameters: parameters,
                    encoding: encoding,

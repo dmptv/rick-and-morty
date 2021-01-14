@@ -15,6 +15,7 @@
 		0F3331A725AF017A000C3652 /* CharacterDetailsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3331A625AF017A000C3652 /* CharacterDetailsStore.swift */; };
 		0F3331AA25AF0187000C3652 /* CharacterDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3331A925AF0187000C3652 /* CharacterDetailsViewModel.swift */; };
 		0F33320325B012D1000C3652 /* InfiniteScrollableTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F33320225B012D1000C3652 /* InfiniteScrollableTableView.swift */; };
+		0F33321E25B07E6A000C3652 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F33321D25B07E6A000C3652 /* Environment.swift */; };
 		0F547AE825A5833D001AD526 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F547AE725A5833D001AD526 /* BaseNavigationController.swift */; };
 		0F547AFC25A5B065001AD526 /* BaseAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F547AEB25A587A9001AD526 /* BaseAssembly.swift */; };
 		0F547B0225A5CD90001AD526 /* CharactersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F547B0125A5CD90001AD526 /* CharactersViewController.xib */; };
@@ -40,7 +41,7 @@
 		0F80AAED25AEC64C002E8316 /* CharactersCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F80AAEC25AEC64C002E8316 /* CharactersCoordinator.swift */; };
 		0F8E740425A485E800A43121 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8E740325A485E800A43121 /* AppDelegate.swift */; };
 		0F8E740D25A485E800A43121 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F8E740C25A485E800A43121 /* Assets.xcassets */; };
-		0F8E741025A485E800A43121 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F8E740E25A485E800A43121 /* LaunchScreen.storyboard */; };
+		0F8E741025A485E800A43121 /* LaunchScreen-Rick-and-Morty.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F8E740E25A485E800A43121 /* LaunchScreen-Rick-and-Morty.storyboard */; };
 		0F8E743C25A48A7200A43121 /* CompositeAppDelegateConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8E743B25A48A7200A43121 /* CompositeAppDelegateConfigurator.swift */; };
 		0F8E743F25A49AB700A43121 /* StartupAppDelegateConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8E743E25A49AB700A43121 /* StartupAppDelegateConfigurator.swift */; };
 		0F8E744225A49B0200A43121 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8E744125A49B0200A43121 /* Coordinator.swift */; };
@@ -61,6 +62,8 @@
 		0F3331A625AF017A000C3652 /* CharacterDetailsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsStore.swift; sourceTree = "<group>"; };
 		0F3331A925AF0187000C3652 /* CharacterDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsViewModel.swift; sourceTree = "<group>"; };
 		0F33320225B012D1000C3652 /* InfiniteScrollableTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteScrollableTableView.swift; sourceTree = "<group>"; };
+		0F33321225B07587000C3652 /* Rick-and-Morty(development).xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Rick-and-Morty(development).xcconfig"; sourceTree = "<group>"; };
+		0F33321D25B07E6A000C3652 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		0F547AE725A5833D001AD526 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		0F547AEB25A587A9001AD526 /* BaseAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAssembly.swift; sourceTree = "<group>"; };
 		0F547B0125A5CD90001AD526 /* CharactersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharactersViewController.xib; sourceTree = "<group>"; };
@@ -88,7 +91,7 @@
 		0F8E740025A485E800A43121 /* Rick-and-Morty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rick-and-Morty.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F8E740325A485E800A43121 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F8E740C25A485E800A43121 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0F8E740F25A485E800A43121 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0F8E740F25A485E800A43121 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/LaunchScreen-Rick-and-Morty.storyboard"; sourceTree = "<group>"; };
 		0F8E741125A485E800A43121 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F8E743B25A48A7200A43121 /* CompositeAppDelegateConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeAppDelegateConfigurator.swift; sourceTree = "<group>"; };
 		0F8E743E25A49AB700A43121 /* StartupAppDelegateConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupAppDelegateConfigurator.swift; sourceTree = "<group>"; };
@@ -212,6 +215,14 @@
 				0F33320225B012D1000C3652 /* InfiniteScrollableTableView.swift */,
 			);
 			name = UIComponents;
+			sourceTree = "<group>";
+		};
+		0F33321125B07539000C3652 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				0F33321225B07587000C3652 /* Rick-and-Morty(development).xcconfig */,
+			);
+			path = Configs;
 			sourceTree = "<group>";
 		};
 		0F547B0425A5CEBC001AD526 /* Controller */ = {
@@ -386,6 +397,7 @@
 				0F8E740325A485E800A43121 /* AppDelegate.swift */,
 				0F547AEB25A587A9001AD526 /* BaseAssembly.swift */,
 				0F8E743B25A48A7200A43121 /* CompositeAppDelegateConfigurator.swift */,
+				0F33321D25B07E6A000C3652 /* Environment.swift */,
 				0F8E743E25A49AB700A43121 /* StartupAppDelegateConfigurator.swift */,
 			);
 			path = Application;
@@ -394,8 +406,9 @@
 		0F8E743225A4896800A43121 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				0F33321125B07539000C3652 /* Configs */,
 				0F8E740C25A485E800A43121 /* Assets.xcassets */,
-				0F8E740E25A485E800A43121 /* LaunchScreen.storyboard */,
+				0F8E740E25A485E800A43121 /* LaunchScreen-Rick-and-Morty.storyboard */,
 				0F8E741125A485E800A43121 /* Info.plist */,
 			);
 			path = SupportingFiles;
@@ -510,7 +523,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F8E741025A485E800A43121 /* LaunchScreen.storyboard in Resources */,
+				0F8E741025A485E800A43121 /* LaunchScreen-Rick-and-Morty.storyboard in Resources */,
 				0F547B0225A5CD90001AD526 /* CharactersViewController.xib in Resources */,
 				0F8E740D25A485E800A43121 /* Assets.xcassets in Resources */,
 				0F3331A425AF016D000C3652 /* CharacterDetailsViewController.xib in Resources */,
@@ -601,6 +614,7 @@
 				0F80A9FC25A9B667002E8316 /* ServicesStorage.swift in Sources */,
 				0F547B0825A5CEFF001AD526 /* CharactersTableViewDelegateImpl.swift in Sources */,
 				0F8E744225A49B0200A43121 /* Coordinator.swift in Sources */,
+				0F33321E25B07E6A000C3652 /* Environment.swift in Sources */,
 				0F80AA7525AD785B002E8316 /* NibLoadable.swift in Sources */,
 				0F8E744525A49B2800A43121 /* Router.swift in Sources */,
 				0F80AAA125ADC068002E8316 /* TabbarController.swift in Sources */,
@@ -629,12 +643,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0F8E740E25A485E800A43121 /* LaunchScreen.storyboard */ = {
+		0F8E740E25A485E800A43121 /* LaunchScreen-Rick-and-Morty.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				0F8E740F25A485E800A43121 /* Base */,
 			);
-			name = LaunchScreen.storyboard;
+			name = "LaunchScreen-Rick-and-Morty.storyboard";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -760,11 +774,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 26D525F5B93D6131CDE11ED3 /* Pods-Rick-and-Morty.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Rick-and-Morty(development)";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_URL = "https://rickandmortyapi.com/api";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C5PU6T6826;
 				INFOPLIST_FILE = "Rick-and-Morty/SupportingFiles/Info.plist";
+				LAUNCH_SCREEN = "LaunchScreen-Rick-and-Morty";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -780,11 +796,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9348B844BAB5E56B6D56082F /* Pods-Rick-and-Morty.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Rick-and-Morty(development)";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_URL = "https://rickandmortyapi.com/api";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C5PU6T6826;
 				INFOPLIST_FILE = "Rick-and-Morty/SupportingFiles/Info.plist";
+				LAUNCH_SCREEN = "LaunchScreen-Rick-and-Morty";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
