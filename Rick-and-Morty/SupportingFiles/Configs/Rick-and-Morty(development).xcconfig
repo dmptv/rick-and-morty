@@ -1,0 +1,17 @@
+//
+//  Rick-and-Morty(development).xcconfig
+//  Rick-and-Morty
+//
+//  Created by Kanat on 14.01.2021.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon-Rick-and-Morty(development)
+APP = Rick-Morty
+BASE_URL = https:/$()/rickandmortyapi.com/api
+LAUNCH_SCREEN = LaunchScreen-Rick-and-Morty
+PRODUCT_NAME = Rick-and-Morty
+
+
