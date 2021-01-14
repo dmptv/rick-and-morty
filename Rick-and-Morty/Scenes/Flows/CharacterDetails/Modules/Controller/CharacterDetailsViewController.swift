@@ -20,7 +20,6 @@ class CharacterDetailsViewController: BaseViewController {
     @IBOutlet weak var icon: UIImageView!
     @IBOutlet weak var name: UILabel!
     
-    
     init(store: CharacterDetailsStore, navigationDelegate: CharacterDetailsNavigationDelegate) {
         self.store = store
         self.navigationDelegate = navigationDelegate
@@ -61,7 +60,7 @@ class CharacterDetailsViewController: BaseViewController {
             case let .loadingFinished(character):
                 self.icon.kf.setImage(with: URL(string: character.image))
                 self.name.text = character.name
-            case let .error(_):
+            case .error(_):
                 break
             }
         }
