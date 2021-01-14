@@ -22,7 +22,7 @@ final class CharactersViewController: BaseViewController {
     private let tableViewDelegateImpl: CharactersTableViewDelegateImpl
     private let tableViewDataSourceImpl: CharactersTableViewDataSourceImpl
     
-    @IBOutlet private var tableView: UITableView!
+    @IBOutlet private var tableView: InfiniteScrollableTableView!
     
     init(store: CharactersStore, navigationDelegate: CharactersNavigationDelegate) {
         self.store = store
@@ -39,6 +39,7 @@ final class CharactersViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        ProgressHud.startAnimating()
         setupUI()
         setupObservers()
         store.dispatch(action: .didLoadView)
@@ -70,6 +71,8 @@ final class CharactersViewController: BaseViewController {
     private func setupTableView() {
         tableView.dataSource = tableViewDataSourceImpl
         tableView.delegate = tableViewDelegateImpl
+        tableView.infiniteScrollDelegate = self
+        tableView.addInfiniteScroll()
         tableView.register(cellClass: CharacterTableViewCell.self)
     }
     
@@ -81,6 +84,7 @@ final class CharactersViewController: BaseViewController {
                 ProgressHud.startAnimating()
             case .loadingFinished:
                 ProgressHud.stopAnimating()
+                vc.tableView.finishInfiniteScroll()
             case let .sections(sections):
                 vc.tableViewDelegateImpl.sections = sections
                 vc.tableViewDataSourceImpl.sections = sections
@@ -90,6 +94,8 @@ final class CharactersViewController: BaseViewController {
                 print("error", message as Any)
             case let .selectedCharacter(charcater):
                 vc.navigationDelegate?.characterDidSelect(self, selectedCharacter: charcater)
+            case .infiniteScrollingDisabled:
+                vc.tableView.removeInfiniteScroll()
             }
         }
     }
@@ -102,4 +108,10 @@ final class CharactersViewController: BaseViewController {
         print("*** deinited \(self.description)")
     }
 
+}
+
+extension CharactersViewController: InfiniteScrollableTableViewDelegate {
+    func infiniteScrollDidStart(_ tableView: InfiniteScrollableTableView) {
+        store.dispatch(action: .infiniteScrollDidStart)
+    }
 }

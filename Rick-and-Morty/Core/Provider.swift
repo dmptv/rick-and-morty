@@ -8,7 +8,7 @@
 import Foundation
 
 protocol MainProvider {
-    func getCharacters(_ completion: @escaping ([CharacterDataModel]?, String?) -> Void)
+    func getCharacters(_ page: Int, completion: @escaping (CharacterCharactersResponse?, String?) -> Void)
 }
 
 final class Provider {
@@ -20,16 +20,15 @@ final class Provider {
 }
 
 extension Provider: MainProvider {
-    func getCharacters(_ completion: @escaping ([CharacterDataModel]?, String?) -> Void) {
-        let url = "https://rickandmortyapi.com/api/character"
+    func getCharacters(_ page: Int, completion: @escaping (CharacterCharactersResponse?, String?) -> Void) {
+        let url = "https://rickandmortyapi.com/api/character/?page=\(page)"
         
         network.request(url) { result in
             switch result {
             case .success(let data):
                 do {
                     let parsedResult: CharacterCharactersResponse = try JSONDecoder().decode(CharacterCharactersResponse.self, from: data)
-                    completion(parsedResult.results, nil)
-                    
+                    completion(parsedResult, nil)
                 } catch let error {
                     completion(nil, error.localizedDescription)
                 }
