@@ -8,6 +8,7 @@
 import Swinject
 import UIKit
 
+/// test branch rules
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
