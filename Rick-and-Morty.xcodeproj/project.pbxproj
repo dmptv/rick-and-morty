@@ -14,6 +14,7 @@
 		0F3331A425AF016D000C3652 /* CharacterDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F3331A225AF016D000C3652 /* CharacterDetailsViewController.xib */; };
 		0F3331A725AF017A000C3652 /* CharacterDetailsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3331A625AF017A000C3652 /* CharacterDetailsStore.swift */; };
 		0F3331AA25AF0187000C3652 /* CharacterDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3331A925AF0187000C3652 /* CharacterDetailsViewModel.swift */; };
+		0F33320325B012D1000C3652 /* InfiniteScrollableTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F33320225B012D1000C3652 /* InfiniteScrollableTableView.swift */; };
 		0F547AE825A5833D001AD526 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F547AE725A5833D001AD526 /* BaseNavigationController.swift */; };
 		0F547AFC25A5B065001AD526 /* BaseAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F547AEB25A587A9001AD526 /* BaseAssembly.swift */; };
 		0F547B0225A5CD90001AD526 /* CharactersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F547B0125A5CD90001AD526 /* CharactersViewController.xib */; };
@@ -59,6 +60,7 @@
 		0F3331A225AF016D000C3652 /* CharacterDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterDetailsViewController.xib; sourceTree = "<group>"; };
 		0F3331A625AF017A000C3652 /* CharacterDetailsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsStore.swift; sourceTree = "<group>"; };
 		0F3331A925AF0187000C3652 /* CharacterDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsViewModel.swift; sourceTree = "<group>"; };
+		0F33320225B012D1000C3652 /* InfiniteScrollableTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteScrollableTableView.swift; sourceTree = "<group>"; };
 		0F547AE725A5833D001AD526 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		0F547AEB25A587A9001AD526 /* BaseAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAssembly.swift; sourceTree = "<group>"; };
 		0F547B0125A5CD90001AD526 /* CharactersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharactersViewController.xib; sourceTree = "<group>"; };
@@ -196,6 +198,22 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		0F33320025B012A2000C3652 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0F80AA7425AD785B002E8316 /* NibLoadable.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		0F33320125B012AC000C3652 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				0F33320225B012D1000C3652 /* InfiniteScrollableTableView.swift */,
+			);
+			name = UIComponents;
+			sourceTree = "<group>";
+		};
 		0F547B0425A5CEBC001AD526 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -288,7 +306,8 @@
 		0F80AA7325AD783C002E8316 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				0F80AA7425AD785B002E8316 /* NibLoadable.swift */,
+				0F33320125B012AC000C3652 /* UIComponents */,
+				0F33320025B012A2000C3652 /* Protocols */,
 			);
 			name = UIKit;
 			sourceTree = "<group>";
@@ -568,6 +587,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F80AADD25ADD86F002E8316 /* CharactersModuleFactory.swift in Sources */,
+				0F33320325B012D1000C3652 /* InfiniteScrollableTableView.swift in Sources */,
 				0F547B1425A5D490001AD526 /* Observable.swift in Sources */,
 				0F8E743F25A49AB700A43121 /* StartupAppDelegateConfigurator.swift in Sources */,
 				0F547B1825A5D507001AD526 /* Provider.swift in Sources */,
