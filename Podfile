@@ -12,6 +12,7 @@ def core_pods
   pod 'Disk', '0.6.4'
   
   pod 'MaterialComponents/ActivityIndicator', '117.0.0'
+  pod 'SwiftMessages', '8.0.2'
 
 end
 

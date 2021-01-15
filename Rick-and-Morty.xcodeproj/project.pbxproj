@@ -19,6 +19,24 @@
 		0F33322E25B178A1000C3652 /* EpisodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F33322C25B178A1000C3652 /* EpisodesViewController.swift */; };
 		0F33322F25B178A1000C3652 /* EpisodesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F33322D25B178A1000C3652 /* EpisodesViewController.xib */; };
 		0F33324325B180F0000C3652 /* CharactersProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F33324225B180F0000C3652 /* CharactersProvider.swift */; };
+		0F33326025B1CE72000C3652 /* ToastCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F33325F25B1CE72000C3652 /* ToastCategory.swift */; };
+		0F33326425B1CE99000C3652 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F33326325B1CE99000C3652 /* ToastView.swift */; };
+		0F33327725B1CF04000C3652 /* ToastView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F33327625B1CF04000C3652 /* ToastView.xib */; };
+		0F33327A25B1D2C5000C3652 /* UIViewController+Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F33327925B1D2C5000C3652 /* UIViewController+Toast.swift */; };
+		0F33327E25B1D335000C3652 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F33327D25B1D335000C3652 /* AppTheme.swift */; };
+		0F33328225B1D4A9000C3652 /* String+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F33328125B1D4A9000C3652 /* String+Format.swift */; };
+		0F33328625B1D56E000C3652 /* UIViewController+ActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F33328525B1D56E000C3652 /* UIViewController+ActionSheet.swift */; };
+		0F33328925B1D589000C3652 /* ActionSheetCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F33328825B1D589000C3652 /* ActionSheetCategory.swift */; };
+		0F33328C25B1D5A7000C3652 /* ActionSheetItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F33328B25B1D5A7000C3652 /* ActionSheetItem.swift */; };
+		0F33329425B1D5F1000C3652 /* ActionSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F33329225B1D5F1000C3652 /* ActionSheetViewController.swift */; };
+		0F33329525B1D5F1000C3652 /* ActionSheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F33329325B1D5F1000C3652 /* ActionSheetViewController.xib */; };
+		0F33329C25B1D7C1000C3652 /* ActionSheetHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F33329B25B1D7C1000C3652 /* ActionSheetHeaderViewModel.swift */; };
+		0F3332A025B1D883000C3652 /* ActionSheetSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F33329F25B1D883000C3652 /* ActionSheetSegue.swift */; };
+		0F3332A625B1D920000C3652 /* ActionSheetHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3332A425B1D920000C3652 /* ActionSheetHeaderCell.swift */; };
+		0F3332A725B1D920000C3652 /* ActionSheetHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F3332A525B1D920000C3652 /* ActionSheetHeaderCell.xib */; };
+		0F3332AB25B1DA56000C3652 /* ActionSheetItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3332A925B1DA56000C3652 /* ActionSheetItemCell.swift */; };
+		0F3332AC25B1DA56000C3652 /* ActionSheetItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F3332AA25B1DA56000C3652 /* ActionSheetItemCell.xib */; };
+		0F3332AF25B1DADB000C3652 /* UITableViewCell+SelectedBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3332AE25B1DADB000C3652 /* UITableViewCell+SelectedBackgroundView.swift */; };
 		0F547AE825A5833D001AD526 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F547AE725A5833D001AD526 /* BaseNavigationController.swift */; };
 		0F547AFC25A5B065001AD526 /* BaseAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F547AEB25A587A9001AD526 /* BaseAssembly.swift */; };
 		0F547B0225A5CD90001AD526 /* CharactersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F547B0125A5CD90001AD526 /* CharactersViewController.xib */; };
@@ -70,6 +88,24 @@
 		0F33322C25B178A1000C3652 /* EpisodesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesViewController.swift; sourceTree = "<group>"; };
 		0F33322D25B178A1000C3652 /* EpisodesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodesViewController.xib; sourceTree = "<group>"; };
 		0F33324225B180F0000C3652 /* CharactersProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersProvider.swift; sourceTree = "<group>"; };
+		0F33325F25B1CE72000C3652 /* ToastCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastCategory.swift; sourceTree = "<group>"; };
+		0F33326325B1CE99000C3652 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		0F33327625B1CF04000C3652 /* ToastView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToastView.xib; sourceTree = "<group>"; };
+		0F33327925B1D2C5000C3652 /* UIViewController+Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Toast.swift"; sourceTree = "<group>"; };
+		0F33327D25B1D335000C3652 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		0F33328125B1D4A9000C3652 /* String+Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Format.swift"; sourceTree = "<group>"; };
+		0F33328525B1D56E000C3652 /* UIViewController+ActionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ActionSheet.swift"; sourceTree = "<group>"; };
+		0F33328825B1D589000C3652 /* ActionSheetCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetCategory.swift; sourceTree = "<group>"; };
+		0F33328B25B1D5A7000C3652 /* ActionSheetItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetItem.swift; sourceTree = "<group>"; };
+		0F33329225B1D5F1000C3652 /* ActionSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetViewController.swift; sourceTree = "<group>"; };
+		0F33329325B1D5F1000C3652 /* ActionSheetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionSheetViewController.xib; sourceTree = "<group>"; };
+		0F33329B25B1D7C1000C3652 /* ActionSheetHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetHeaderViewModel.swift; sourceTree = "<group>"; };
+		0F33329F25B1D883000C3652 /* ActionSheetSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetSegue.swift; sourceTree = "<group>"; };
+		0F3332A425B1D920000C3652 /* ActionSheetHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetHeaderCell.swift; sourceTree = "<group>"; };
+		0F3332A525B1D920000C3652 /* ActionSheetHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionSheetHeaderCell.xib; sourceTree = "<group>"; };
+		0F3332A925B1DA56000C3652 /* ActionSheetItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetItemCell.swift; sourceTree = "<group>"; };
+		0F3332AA25B1DA56000C3652 /* ActionSheetItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionSheetItemCell.xib; sourceTree = "<group>"; };
+		0F3332AE25B1DADB000C3652 /* UITableViewCell+SelectedBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+SelectedBackgroundView.swift"; sourceTree = "<group>"; };
 		0F547AE725A5833D001AD526 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		0F547AEB25A587A9001AD526 /* BaseAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAssembly.swift; sourceTree = "<group>"; };
 		0F547B0125A5CD90001AD526 /* CharactersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharactersViewController.xib; sourceTree = "<group>"; };
@@ -257,6 +293,116 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		0F33325D25B1CE26000C3652 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				0F33325E25B1CE58000C3652 /* Model */,
+				0F33327525B1CEF3000C3652 /* View */,
+				0F33327925B1D2C5000C3652 /* UIViewController+Toast.swift */,
+			);
+			name = Toast;
+			sourceTree = "<group>";
+		};
+		0F33325E25B1CE58000C3652 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0F33325F25B1CE72000C3652 /* ToastCategory.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0F33327525B1CEF3000C3652 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0F33326325B1CE99000C3652 /* ToastView.swift */,
+				0F33327625B1CF04000C3652 /* ToastView.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		0F33327C25B1D326000C3652 /* AppTheme */ = {
+			isa = PBXGroup;
+			children = (
+				0F33327D25B1D335000C3652 /* AppTheme.swift */,
+			);
+			name = AppTheme;
+			sourceTree = "<group>";
+		};
+		0F33328025B1D49C000C3652 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				0F33328125B1D4A9000C3652 /* String+Format.swift */,
+				0F3332AE25B1DADB000C3652 /* UITableViewCell+SelectedBackgroundView.swift */,
+			);
+			name = Extentions;
+			sourceTree = "<group>";
+		};
+		0F33328425B1D554000C3652 /* ActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				0F33328525B1D56E000C3652 /* UIViewController+ActionSheet.swift */,
+				0F33329725B1D75B000C3652 /* Controller */,
+				0F33329825B1D780000C3652 /* Model */,
+				0F33329925B1D79D000C3652 /* View */,
+				0F33329A25B1D7A4000C3652 /* ViewModel */,
+			);
+			name = ActionSheet;
+			sourceTree = "<group>";
+		};
+		0F33329725B1D75B000C3652 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0F33329225B1D5F1000C3652 /* ActionSheetViewController.swift */,
+				0F33329325B1D5F1000C3652 /* ActionSheetViewController.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		0F33329825B1D780000C3652 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0F33328825B1D589000C3652 /* ActionSheetCategory.swift */,
+				0F33328B25B1D5A7000C3652 /* ActionSheetItem.swift */,
+				0F33329F25B1D883000C3652 /* ActionSheetSegue.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0F33329925B1D79D000C3652 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0F3332A225B1D8D2000C3652 /* ActionSheetHeaderCell */,
+				0F3332A325B1D8EB000C3652 /* ActionSheetItemCell */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		0F33329A25B1D7A4000C3652 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0F33329B25B1D7C1000C3652 /* ActionSheetHeaderViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		0F3332A225B1D8D2000C3652 /* ActionSheetHeaderCell */ = {
+			isa = PBXGroup;
+			children = (
+				0F3332A425B1D920000C3652 /* ActionSheetHeaderCell.swift */,
+				0F3332A525B1D920000C3652 /* ActionSheetHeaderCell.xib */,
+			);
+			name = ActionSheetHeaderCell;
+			sourceTree = "<group>";
+		};
+		0F3332A325B1D8EB000C3652 /* ActionSheetItemCell */ = {
+			isa = PBXGroup;
+			children = (
+				0F3332A925B1DA56000C3652 /* ActionSheetItemCell.swift */,
+				0F3332AA25B1DA56000C3652 /* ActionSheetItemCell.xib */,
+			);
+			name = ActionSheetItemCell;
+			sourceTree = "<group>";
+		};
 		0F547B0425A5CEBC001AD526 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -330,7 +476,9 @@
 		0F80AA6225AD7777002E8316 /* BaseModules */ = {
 			isa = PBXGroup;
 			children = (
-				0F80AA6E25AD780A002E8316 /* ProgressHud */,
+				0F33328425B1D554000C3652 /* ActionSheet */,
+				0F547B1225A5D481001AD526 /* Foundation */,
+				0F547B1A25A5D595001AD526 /* Network */,
 				0F8E745525A49E3D00A43121 /* BaseViewController.swift */,
 				0F547AE725A5833D001AD526 /* BaseNavigationController.swift */,
 			);
@@ -350,8 +498,10 @@
 		0F80AA7325AD783C002E8316 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				0F33320125B012AC000C3652 /* UIComponents */,
+				0F33327C25B1D326000C3652 /* AppTheme */,
+				0F33328025B1D49C000C3652 /* Extentions */,
 				0F33320025B012A2000C3652 /* Protocols */,
+				0F33320125B012AC000C3652 /* UIComponents */,
 			);
 			name = UIKit;
 			sourceTree = "<group>";
@@ -460,11 +610,11 @@
 			isa = PBXGroup;
 			children = (
 				0F80AA6225AD7777002E8316 /* BaseModules */,
-				0F547B1225A5D481001AD526 /* Foundation */,
-				0F547B1A25A5D595001AD526 /* Network */,
 				0F547B1625A5D4F4001AD526 /* Providers */,
+				0F80AA6E25AD780A002E8316 /* ProgressHud */,
 				0F8E743A25A48A4B00A43121 /* Services */,
 				0F80A9F725A9B60A002E8316 /* Storages */,
+				0F33325D25B1CE26000C3652 /* Toast */,
 				0F80AA7325AD783C002E8316 /* UIKit */,
 			);
 			path = Core;
@@ -556,10 +706,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F3332A725B1D920000C3652 /* ActionSheetHeaderCell.xib in Resources */,
+				0F3332AC25B1DA56000C3652 /* ActionSheetItemCell.xib in Resources */,
 				0F8E741025A485E800A43121 /* LaunchScreen-Rick-and-Morty.storyboard in Resources */,
 				0F547B0225A5CD90001AD526 /* CharactersViewController.xib in Resources */,
 				0F8E740D25A485E800A43121 /* Assets.xcassets in Resources */,
 				0F3331A425AF016D000C3652 /* CharacterDetailsViewController.xib in Resources */,
+				0F33327725B1CF04000C3652 /* ToastView.xib in Resources */,
+				0F33329525B1D5F1000C3652 /* ActionSheetViewController.xib in Resources */,
 				0F33322F25B178A1000C3652 /* EpisodesViewController.xib in Resources */,
 				0F80AA7825AD78DD002E8316 /* ProgressHudContainerView.xib in Resources */,
 				0F80A98025A72687002E8316 /* CharacterTableViewCell.xib in Resources */,
@@ -633,18 +787,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F33327A25B1D2C5000C3652 /* UIViewController+Toast.swift in Sources */,
+				0F33327E25B1D335000C3652 /* AppTheme.swift in Sources */,
 				0F80AADD25ADD86F002E8316 /* CharactersModuleFactory.swift in Sources */,
 				0F33320325B012D1000C3652 /* InfiniteScrollableTableView.swift in Sources */,
+				0F3332A025B1D883000C3652 /* ActionSheetSegue.swift in Sources */,
 				0F547B1425A5D490001AD526 /* Observable.swift in Sources */,
 				0F8E743F25A49AB700A43121 /* StartupAppDelegateConfigurator.swift in Sources */,
+				0F33328C25B1D5A7000C3652 /* ActionSheetItem.swift in Sources */,
 				0F547B1825A5D507001AD526 /* Provider.swift in Sources */,
 				0F80A98325A742EA002E8316 /* CharacterDataModel.swift in Sources */,
 				0F3331AA25AF0187000C3652 /* CharacterDetailsViewModel.swift in Sources */,
+				0F33329C25B1D7C1000C3652 /* ActionSheetHeaderViewModel.swift in Sources */,
 				0F33319A25AEF022000C3652 /* CharacterDetailsModuleFactory.swift in Sources */,
 				0F547B0F25A5CF3D001AD526 /* CharactersStore.swift in Sources */,
+				0F3332A625B1D920000C3652 /* ActionSheetHeaderCell.swift in Sources */,
 				0F8E744F25A49D2300A43121 /* ModuleFactory.swift in Sources */,
 				0F8E745625A49E3D00A43121 /* BaseViewController.swift in Sources */,
+				0F3332AB25B1DA56000C3652 /* ActionSheetItemCell.swift in Sources */,
 				0F3331A325AF016D000C3652 /* CharacterDetailsViewController.swift in Sources */,
+				0F3332AF25B1DADB000C3652 /* UITableViewCell+SelectedBackgroundView.swift in Sources */,
 				0F80A9FC25A9B667002E8316 /* ServicesStorage.swift in Sources */,
 				0F547B0825A5CEFF001AD526 /* CharactersTableViewDelegateImpl.swift in Sources */,
 				0F8E744225A49B0200A43121 /* Coordinator.swift in Sources */,
@@ -653,18 +815,24 @@
 				0F8E744525A49B2800A43121 /* Router.swift in Sources */,
 				0F80AAA125ADC068002E8316 /* TabbarController.swift in Sources */,
 				0F3331A725AF017A000C3652 /* CharacterDetailsStore.swift in Sources */,
+				0F33328625B1D56E000C3652 /* UIViewController+ActionSheet.swift in Sources */,
 				0F8E740425A485E800A43121 /* AppDelegate.swift in Sources */,
 				0F8E744C25A49CD700A43121 /* CoordinatorFactory.swift in Sources */,
+				0F33328225B1D4A9000C3652 /* String+Format.swift in Sources */,
+				0F33326425B1CE99000C3652 /* ToastView.swift in Sources */,
 				0F547AE825A5833D001AD526 /* BaseNavigationController.swift in Sources */,
 				0F547B0B25A5CF0F001AD526 /* CharactersTableViewDataSourceImpl.swift in Sources */,
 				0F33322E25B178A1000C3652 /* EpisodesViewController.swift in Sources */,
 				0F80A9F925A9B629002E8316 /* Storage.swift in Sources */,
+				0F33329425B1D5F1000C3652 /* ActionSheetViewController.swift in Sources */,
 				0F80AAED25AEC64C002E8316 /* CharactersCoordinator.swift in Sources */,
+				0F33328925B1D589000C3652 /* ActionSheetCategory.swift in Sources */,
 				0F80AADA25ADD85E002E8316 /* CharactersCoordinatorFactory.swift in Sources */,
 				0F547B1C25A5D5A2001AD526 /* Network.swift in Sources */,
 				0F547B2025A5DCFB001AD526 /* TableView+Extention.swift in Sources */,
 				0F33324325B180F0000C3652 /* CharactersProvider.swift in Sources */,
 				0F8E743C25A48A7200A43121 /* CompositeAppDelegateConfigurator.swift in Sources */,
+				0F33326025B1CE72000C3652 /* ToastCategory.swift in Sources */,
 				0F33319325AEEC43000C3652 /* CharacterTableViewCell.swift in Sources */,
 				0F33319725AEEFA7000C3652 /* CharacterDetailsCoordinator.swift in Sources */,
 				0F547B2425A5E746001AD526 /* CharacterViewModel.swift in Sources */,

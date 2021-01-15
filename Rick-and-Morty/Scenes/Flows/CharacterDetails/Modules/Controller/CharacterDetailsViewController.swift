@@ -60,8 +60,8 @@ class CharacterDetailsViewController: BaseViewController {
             case let .loadingFinished(character):
                 self.icon.kf.setImage(with: URL(string: character.image))
                 self.name.text = character.name
-            case .error(_):
-                break
+            case  let .error(message):
+                vc.showToast(category: .error, message: message)
             }
         }
     }

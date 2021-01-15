@@ -90,8 +90,8 @@ final class CharactersViewController: BaseViewController {
                 vc.tableViewDataSourceImpl.sections = sections
                 vc.tableView.reloadData()
             case let .error(message):
-//                vc.showToast(category: .error, message: message)
                 ProgressHud.stopAnimating()
+                vc.showToast(category: .error, message: message)
             case let .selectedCharacter(charcater):
                 vc.navigationDelegate?.characterDidSelect(self, selectedCharacter: charcater)
             case .infiniteScrollingDisabled:
