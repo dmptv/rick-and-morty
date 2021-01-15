@@ -26,10 +26,10 @@ final class CharactersCoordinator: Coordinator {
     }
 
     override func start() {
-        showMain()
+        showCharacters()
     }
     
-    private func showMain() {
+    private func showCharacters() {
         let home = moduleFactory.makeMain(navigationDelegate: self)
         router.setRootModule(home)
     }

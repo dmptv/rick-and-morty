@@ -20,8 +20,10 @@ final class ApplicationCoordinator: Coordinator {
     }
 
     override func start() {
-        let home = runMainFlow()
-        makeTabbar([home])
+        let home = runCharactersFlow()
+        let vc = UIViewController()
+        let nav = BaseNavigationController(rootViewController: vc)
+        makeTabbar([home, nav])
     }
 
     private func makeTabbar(_ viewControllers: [UIViewController]) {
@@ -29,7 +31,7 @@ final class ApplicationCoordinator: Coordinator {
         router.setRootModule(tabbar, isNavigationBarHidden: true)
     }
     
-    private func runMainFlow() -> UIViewController {
+    private func runCharactersFlow() -> BaseNavigationController {
         let (coordinator, module) = coordinatorFactory.makeMain(delegate: self)
         coordinator.start()
         addDependency(coordinator)
@@ -49,11 +51,11 @@ extension ApplicationCoordinator: MainCoordinatorDelegate {
 // MARK: - MainNavigationDelegate
 
 extension ApplicationCoordinator: TabbarControllerDelegate {
-    func onHomeFlowSelect(_ viewController: TabbarController) {
+    func onCharactersFlowSelect(_ viewController: BaseNavigationController) {
         
     }
     
-    func onSecondFlowSelect(_ viewController: TabbarController) {
+    func onEpisodesFlowSelect(_ viewController: BaseNavigationController) {
         
     }
     
