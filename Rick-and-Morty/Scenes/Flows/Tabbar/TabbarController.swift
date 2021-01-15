@@ -12,13 +12,26 @@ protocol TabbarControllerDelegate: class {
     func onEpisodesFlowSelect(_ viewController: BaseNavigationController)
 }
 
-
 final class TabbarController: UITabBarController, UITabBarControllerDelegate {
     private weak var navigationDelegate: TabbarControllerDelegate?
     
     init(viewControllers: [UIViewController], navigationDelegate: TabbarControllerDelegate) {
         self.navigationDelegate = navigationDelegate
         super.init(nibName: nil, bundle: nil)
+        
+        viewControllers.forEach { baseVC in
+            guard let base = baseVC as? BaseNavigationController else { return }
+            let regularTextConfig = UIImage.SymbolConfiguration(textStyle: .title3)
+
+            if let charVC = base.topViewController as? CharactersViewController {
+                charVC.tabBarItem = UITabBarItem.init(title: "Characters", image: UIImage(systemName: "figure.walk.circle", withConfiguration: regularTextConfig), selectedImage: UIImage(systemName: "figure.walk.circle.fill", withConfiguration: regularTextConfig))
+            }
+            
+            if let episVC = base.topViewController as? EpisodesViewController {
+                episVC.tabBarItem = UITabBarItem.init(title: "Episodes", image: UIImage(systemName: "play.tv", withConfiguration: regularTextConfig), selectedImage: UIImage(systemName: "play.tv.fill", withConfiguration: regularTextConfig))
+            }
+        }
+        
         self.viewControllers = viewControllers
     }
     
@@ -31,6 +44,8 @@ final class TabbarController: UITabBarController, UITabBarControllerDelegate {
         super.viewDidLoad()
         
         delegate = self
+        
+        customizableViewControllers = [UIViewController(), UIViewController(), UIViewController()]
     }
     
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {

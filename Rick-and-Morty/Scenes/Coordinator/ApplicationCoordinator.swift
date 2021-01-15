@@ -20,10 +20,10 @@ final class ApplicationCoordinator: Coordinator {
     }
 
     override func start() {
-        let home = runCharactersFlow()
-        let vc = UIViewController()
+        let charNav = runCharactersFlow()
+        let vc = EpisodesViewController()
         let nav = BaseNavigationController(rootViewController: vc)
-        makeTabbar([home, nav])
+        makeTabbar([charNav, nav])
     }
 
     private func makeTabbar(_ viewControllers: [UIViewController]) {

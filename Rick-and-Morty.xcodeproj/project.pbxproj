@@ -16,6 +16,8 @@
 		0F3331AA25AF0187000C3652 /* CharacterDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3331A925AF0187000C3652 /* CharacterDetailsViewModel.swift */; };
 		0F33320325B012D1000C3652 /* InfiniteScrollableTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F33320225B012D1000C3652 /* InfiniteScrollableTableView.swift */; };
 		0F33321E25B07E6A000C3652 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F33321D25B07E6A000C3652 /* Environment.swift */; };
+		0F33322E25B178A1000C3652 /* EpisodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F33322C25B178A1000C3652 /* EpisodesViewController.swift */; };
+		0F33322F25B178A1000C3652 /* EpisodesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F33322D25B178A1000C3652 /* EpisodesViewController.xib */; };
 		0F547AE825A5833D001AD526 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F547AE725A5833D001AD526 /* BaseNavigationController.swift */; };
 		0F547AFC25A5B065001AD526 /* BaseAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F547AEB25A587A9001AD526 /* BaseAssembly.swift */; };
 		0F547B0225A5CD90001AD526 /* CharactersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F547B0125A5CD90001AD526 /* CharactersViewController.xib */; };
@@ -64,6 +66,8 @@
 		0F33320225B012D1000C3652 /* InfiniteScrollableTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteScrollableTableView.swift; sourceTree = "<group>"; };
 		0F33321225B07587000C3652 /* Rick-and-Morty(development).xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Rick-and-Morty(development).xcconfig"; sourceTree = "<group>"; };
 		0F33321D25B07E6A000C3652 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		0F33322C25B178A1000C3652 /* EpisodesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesViewController.swift; sourceTree = "<group>"; };
+		0F33322D25B178A1000C3652 /* EpisodesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodesViewController.xib; sourceTree = "<group>"; };
 		0F547AE725A5833D001AD526 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		0F547AEB25A587A9001AD526 /* BaseAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAssembly.swift; sourceTree = "<group>"; };
 		0F547B0125A5CD90001AD526 /* CharactersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharactersViewController.xib; sourceTree = "<group>"; };
@@ -122,9 +126,10 @@
 		0F3330EC25AEC84F000C3652 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
-				0F80AA9F25ADC043002E8316 /* Tabbar */,
 				0F80AA9325ADBFF5002E8316 /* Characters */,
 				0F33319525AEEF6E000C3652 /* CharacterDetails */,
+				0F33322925B1784A000C3652 /* Episodes */,
+				0F80AA9F25ADC043002E8316 /* Tabbar */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -223,6 +228,31 @@
 				0F33321225B07587000C3652 /* Rick-and-Morty(development).xcconfig */,
 			);
 			path = Configs;
+			sourceTree = "<group>";
+		};
+		0F33322925B1784A000C3652 /* Episodes */ = {
+			isa = PBXGroup;
+			children = (
+				0F33322A25B1786F000C3652 /* Modules */,
+			);
+			path = Episodes;
+			sourceTree = "<group>";
+		};
+		0F33322A25B1786F000C3652 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				0F33322B25B17879000C3652 /* Controller */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		0F33322B25B17879000C3652 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0F33322C25B178A1000C3652 /* EpisodesViewController.swift */,
+				0F33322D25B178A1000C3652 /* EpisodesViewController.xib */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		0F547B0425A5CEBC001AD526 /* Controller */ = {
@@ -527,6 +557,7 @@
 				0F547B0225A5CD90001AD526 /* CharactersViewController.xib in Resources */,
 				0F8E740D25A485E800A43121 /* Assets.xcassets in Resources */,
 				0F3331A425AF016D000C3652 /* CharacterDetailsViewController.xib in Resources */,
+				0F33322F25B178A1000C3652 /* EpisodesViewController.xib in Resources */,
 				0F80AA7825AD78DD002E8316 /* ProgressHudContainerView.xib in Resources */,
 				0F80A98025A72687002E8316 /* CharacterTableViewCell.xib in Resources */,
 			);
@@ -623,6 +654,7 @@
 				0F8E744C25A49CD700A43121 /* CoordinatorFactory.swift in Sources */,
 				0F547AE825A5833D001AD526 /* BaseNavigationController.swift in Sources */,
 				0F547B0B25A5CF0F001AD526 /* CharactersTableViewDataSourceImpl.swift in Sources */,
+				0F33322E25B178A1000C3652 /* EpisodesViewController.swift in Sources */,
 				0F80A9F925A9B629002E8316 /* Storage.swift in Sources */,
 				0F80AAED25AEC64C002E8316 /* CharactersCoordinator.swift in Sources */,
 				0F80AADA25ADD85E002E8316 /* CharactersCoordinatorFactory.swift in Sources */,
