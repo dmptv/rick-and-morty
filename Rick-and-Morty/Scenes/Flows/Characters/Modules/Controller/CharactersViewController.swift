@@ -91,11 +91,12 @@ final class CharactersViewController: BaseViewController {
                 vc.tableView.reloadData()
             case let .error(message):
 //                vc.showToast(category: .error, message: message)
-                print("error", message as Any)
+                ProgressHud.stopAnimating()
             case let .selectedCharacter(charcater):
                 vc.navigationDelegate?.characterDidSelect(self, selectedCharacter: charcater)
             case .infiniteScrollingDisabled:
                 vc.tableView.removeInfiniteScroll()
+                ProgressHud.stopAnimating()
             }
         }
     }

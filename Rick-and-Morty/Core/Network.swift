@@ -6,6 +6,7 @@
 //
 
 import Alamofire
+import Promises
 
 final class Network {
     typealias CompletionHandler = ((Result<Data, AFError>) -> Void)
@@ -14,6 +15,7 @@ final class Network {
     init(baseUrl: String) {
         self.baseUrl = baseUrl
     }
+    
     
     func request(_ url: String,
                  method: HTTPMethod = .get,

@@ -4,11 +4,14 @@ use_frameworks!
 
 def core_pods
   pod 'Alamofire', '5.2.2'
-pod 'Kingfisher', '5.15.5'
-pod 'Swinject', '2.7.1'
-pod 'SwiftLint'
-pod 'Disk', '0.6.4'
-pod 'MaterialComponents/ActivityIndicator', '117.0.0'
+  pod 'PromisesSwift', '1.2.10'
+  pod 'Kingfisher', '5.15.5'
+  
+  pod 'Swinject', '2.7.1'
+  pod 'SwiftLint'
+  pod 'Disk', '0.6.4'
+  
+  pod 'MaterialComponents/ActivityIndicator', '117.0.0'
 
 end
 
