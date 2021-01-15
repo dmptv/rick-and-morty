@@ -16,7 +16,7 @@ final class CoordinatorFactory {
         self.assembler = assembler
     }
     
-    func makeMain(delegate: MainCoordinatorDelegate) -> (coordinator: Coordinator, module: UIViewController) {
+    func makeMain(delegate: MainCoordinatorDelegate) -> (coordinator: Coordinator, module: BaseNavigationController) {
         let navigationController = BaseNavigationController()
         let coordinator = CharactersCoordinator(router: Router(navigationController: navigationController), assembler: assembler, delegate: delegate)
         return (coordinator, navigationController)

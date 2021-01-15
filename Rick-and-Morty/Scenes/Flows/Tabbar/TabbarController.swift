@@ -1,4 +1,3 @@
-//
 //  TabbarController.swift
 //  Test-Project
 //
@@ -9,8 +8,8 @@ import UIKit
 
 // swiftlint:disable all
 protocol TabbarControllerDelegate: class {
-    func onHomeFlowSelect(_ viewController: TabbarController)
-    func onSecondFlowSelect(_ viewController: TabbarController)
+    func onCharactersFlowSelect(_ viewController: BaseNavigationController)
+    func onEpisodesFlowSelect(_ viewController: BaseNavigationController)
 }
 
 
@@ -35,12 +34,12 @@ final class TabbarController: UITabBarController, UITabBarControllerDelegate {
     }
     
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
-        guard let controller = viewControllers?[selectedIndex] as? UINavigationController else { return }
+        guard let controller = viewControllers?[selectedIndex] as? BaseNavigationController else { return }
         
         if selectedIndex == 0 {
-            
+            navigationDelegate?.onCharactersFlowSelect(controller)
         } else if selectedIndex == 1 {
-            
+            navigationDelegate?.onEpisodesFlowSelect(controller)
         } else if selectedIndex == 2 {
             
         }
