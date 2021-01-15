@@ -61,7 +61,8 @@ class CharacterDetailsViewController: BaseViewController {
                 self.icon.kf.setImage(with: URL(string: character.image))
                 self.name.text = character.name
             case  let .error(message):
-                vc.showToast(category: .error, message: message)
+//                vc.showToast(category: .error, message: message)
+            break
             }
         }
     }
