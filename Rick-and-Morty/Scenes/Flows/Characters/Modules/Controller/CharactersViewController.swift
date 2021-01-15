@@ -5,8 +5,8 @@
 //  Created by Kanat on 05.01.2021.
 //
 
+import SwiftMessages
 import UIKit
-
 
 protocol CharactersNavigationDelegate: class {
     func characterDidSelect(_ viewController: CharactersViewController, selectedCharacter: CharacterDataModel)
@@ -91,7 +91,14 @@ final class CharactersViewController: BaseViewController {
                 vc.tableView.reloadData()
             case let .error(message):
                 ProgressHud.stopAnimating()
-//                vc.showToast(category: .error, message: message)
+                SwiftMessages.defaultConfig.presentationStyle = .center
+                SwiftMessages.show {
+                    let view = MessageView.viewFromNib(layout: .centeredView)
+                    view.bodyLabel?.text = message
+                    view.titleLabel?.text = ""
+                    return view
+                }
+            
             case let .selectedCharacter(charcater):
                 vc.navigationDelegate?.characterDidSelect(self, selectedCharacter: charcater)
             case .infiniteScrollingDisabled:
