@@ -28,14 +28,14 @@ final class CharactersStore {
         case infiniteScrollingDisabled
     }
     
-    private let provider: MainProvider
+    private let provider: CharactersProvider
     private var allCharacters: [CharacterDataModel] = []
     private var allPages: Int = 0
     private var fetchedPages: Int = 0
     
     @Observable private(set) var state: State?
     
-    init(provider: MainProvider) {
+    init(provider: CharactersProvider) {
         self.provider = provider
     }
     
@@ -54,18 +54,15 @@ final class CharactersStore {
     
     private func getCharacters() {
         if (fetchedPages == 0) || (allPages / fetchedPages) > 1 {
-            provider.getCharacters(fetchedPages + 1) { [weak self] response, errorMessage  in
+            provider.getCharacters(fetchedPages + 1).then { [weak self] response in
                 guard let self = self else { return }
-                if let characters = response?.results {
-                    if let pages = response?.info.pages {
-                        self.allPages = pages
-                    }
-                    self.allCharacters.append(contentsOf: characters)
-                    self.fetchedPages += 1
-                    self.setupSections()
-                } else {
-                    self.state = .error(message: errorMessage)
-                }
+                self.allPages = response.info.pages
+                self.allCharacters.append(contentsOf: response.results)
+                self.fetchedPages += 1
+                self.setupSections()
+                
+            }.catch { error in
+                self.state = .error(message: error.localizedDescription)
             }
         } else {
             state = .infiniteScrollingDisabled

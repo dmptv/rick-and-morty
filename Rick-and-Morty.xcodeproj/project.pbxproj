@@ -18,6 +18,7 @@
 		0F33321E25B07E6A000C3652 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F33321D25B07E6A000C3652 /* Environment.swift */; };
 		0F33322E25B178A1000C3652 /* EpisodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F33322C25B178A1000C3652 /* EpisodesViewController.swift */; };
 		0F33322F25B178A1000C3652 /* EpisodesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F33322D25B178A1000C3652 /* EpisodesViewController.xib */; };
+		0F33324325B180F0000C3652 /* CharactersProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F33324225B180F0000C3652 /* CharactersProvider.swift */; };
 		0F547AE825A5833D001AD526 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F547AE725A5833D001AD526 /* BaseNavigationController.swift */; };
 		0F547AFC25A5B065001AD526 /* BaseAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F547AEB25A587A9001AD526 /* BaseAssembly.swift */; };
 		0F547B0225A5CD90001AD526 /* CharactersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F547B0125A5CD90001AD526 /* CharactersViewController.xib */; };
@@ -68,6 +69,7 @@
 		0F33321D25B07E6A000C3652 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		0F33322C25B178A1000C3652 /* EpisodesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesViewController.swift; sourceTree = "<group>"; };
 		0F33322D25B178A1000C3652 /* EpisodesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodesViewController.xib; sourceTree = "<group>"; };
+		0F33324225B180F0000C3652 /* CharactersProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersProvider.swift; sourceTree = "<group>"; };
 		0F547AE725A5833D001AD526 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		0F547AEB25A587A9001AD526 /* BaseAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAssembly.swift; sourceTree = "<group>"; };
 		0F547B0125A5CD90001AD526 /* CharactersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharactersViewController.xib; sourceTree = "<group>"; };
@@ -294,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				0F547B1725A5D507001AD526 /* Provider.swift */,
+				0F33324225B180F0000C3652 /* CharactersProvider.swift */,
 			);
 			name = Providers;
 			sourceTree = "<group>";
@@ -660,6 +663,7 @@
 				0F80AADA25ADD85E002E8316 /* CharactersCoordinatorFactory.swift in Sources */,
 				0F547B1C25A5D5A2001AD526 /* Network.swift in Sources */,
 				0F547B2025A5DCFB001AD526 /* TableView+Extention.swift in Sources */,
+				0F33324325B180F0000C3652 /* CharactersProvider.swift in Sources */,
 				0F8E743C25A48A7200A43121 /* CompositeAppDelegateConfigurator.swift in Sources */,
 				0F33319325AEEC43000C3652 /* CharacterTableViewCell.swift in Sources */,
 				0F33319725AEEFA7000C3652 /* CharacterDetailsCoordinator.swift in Sources */,

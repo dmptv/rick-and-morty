@@ -15,6 +15,9 @@ PODS:
   - MotionAnimator (2.8.1):
     - MotionInterchange (~> 1.6)
   - MotionInterchange (1.6.0)
+  - PromisesObjC (1.2.10)
+  - PromisesSwift (1.2.10):
+    - PromisesObjC (= 1.2.10)
   - SwiftLint (0.42.0)
   - Swinject (2.7.1)
 
@@ -23,6 +26,7 @@ DEPENDENCIES:
   - Disk (= 0.6.4)
   - Kingfisher (= 5.15.5)
   - MaterialComponents/ActivityIndicator (= 117.0.0)
+  - PromisesSwift (= 1.2.10)
   - SwiftLint
   - Swinject (= 2.7.1)
 
@@ -35,6 +39,8 @@ SPEC REPOS:
     - MDFInternationalization
     - MotionAnimator
     - MotionInterchange
+    - PromisesObjC
+    - PromisesSwift
     - SwiftLint
     - Swinject
 
@@ -46,9 +52,11 @@ SPEC CHECKSUMS:
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MotionAnimator: ee16aa30567c5bae0fb2750c132915829cfaaf8a
   MotionInterchange: ead0e3ae1f3a5fb539e289debbc7ae036160a10d
+  PromisesObjC: b14b1c6b68e306650688599de8a45e49fae81151
+  PromisesSwift: ce4c7602f91a6bfc8732039f1bc1a3fcded1a302
   SwiftLint: 4fa9579c63416865179bc416f0a92d55f009600d
   Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
 
-PODFILE CHECKSUM: 40f463907f022ecb0ab84a9b92b0fe39fbfe189a
+PODFILE CHECKSUM: 2f4c51d3e6cf360ba1b350bfbcd254fd89469044
 
 COCOAPODS: 1.10.0

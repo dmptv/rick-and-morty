@@ -14,6 +14,11 @@ struct  CharacterCharactersResponse: Decodable {
     }
     let info: InfoResponse
     let results: [CharacterDataModel]
+    
+    init(info: InfoResponse, results: [CharacterDataModel]) {
+        self.info = info
+        self.results = results
+    }
 }
 
 struct CharacterDataModel: Codable {
