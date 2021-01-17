@@ -11,6 +11,7 @@ def core_pods
   pod 'Swinject', '2.7.1'
   pod 'SwiftLint'
   pod 'Disk', '0.6.4'
+  pod "Apollo/SQLite"
   
   pod 'MaterialComponents/ActivityIndicator', '117.0.0'
   pod 'SwiftMessages', '8.0.2'

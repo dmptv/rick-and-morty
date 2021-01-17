@@ -45,6 +45,10 @@
 		0F80AADA25ADD85E002E8316 /* CharactersCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F80AAD925ADD85E002E8316 /* CharactersCoordinatorFactory.swift */; };
 		0F80AADD25ADD86F002E8316 /* CharactersModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F80AADC25ADD86F002E8316 /* CharactersModuleFactory.swift */; };
 		0F80AAED25AEC64C002E8316 /* CharactersCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F80AAEC25AEC64C002E8316 /* CharactersCoordinator.swift */; };
+		0F88171525B48BD60068586E /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F88171425B48BD60068586E /* schema.json */; };
+		0F88171B25B48DB00068586E /* Queries.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 0F88171A25B48DB00068586E /* Queries.graphql */; };
+		0F88171E25B48E180068586E /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F88171D25B48E180068586E /* API.swift */; };
+		0F88172125B48E6B0068586E /* ApolloNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F88172025B48E6B0068586E /* ApolloNetwork.swift */; };
 		0F8E740425A485E800A43121 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8E740325A485E800A43121 /* AppDelegate.swift */; };
 		0F8E740D25A485E800A43121 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F8E740C25A485E800A43121 /* Assets.xcassets */; };
 		0F8E741025A485E800A43121 /* LaunchScreen-Rick-and-Morty.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F8E740E25A485E800A43121 /* LaunchScreen-Rick-and-Morty.storyboard */; };
@@ -100,6 +104,11 @@
 		0F80AAD925ADD85E002E8316 /* CharactersCoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersCoordinatorFactory.swift; sourceTree = "<group>"; };
 		0F80AADC25ADD86F002E8316 /* CharactersModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersModuleFactory.swift; sourceTree = "<group>"; };
 		0F80AAEC25AEC64C002E8316 /* CharactersCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersCoordinator.swift; sourceTree = "<group>"; };
+		0F88171425B48BD60068586E /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		0F88171A25B48DB00068586E /* Queries.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Queries.graphql; sourceTree = "<group>"; };
+		0F88171D25B48E180068586E /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		0F88172025B48E6B0068586E /* ApolloNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloNetwork.swift; sourceTree = "<group>"; };
+		0F88174525B4915E0068586E /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F8E740025A485E800A43121 /* Rick-and-Morty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rick-and-Morty.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F8E740325A485E800A43121 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F8E740C25A485E800A43121 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -328,6 +337,7 @@
 			isa = PBXGroup;
 			children = (
 				0F547B1B25A5D5A2001AD526 /* Network.swift */,
+				0F88172025B48E6B0068586E /* ApolloNetwork.swift */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -446,6 +456,9 @@
 				0F8E743925A48A4200A43121 /* Core */,
 				0F8E743325A4898400A43121 /* Scenes */,
 				0F8E743225A4896800A43121 /* SupportingFiles */,
+				0F88171425B48BD60068586E /* schema.json */,
+				0F88171A25B48DB00068586E /* Queries.graphql */,
+				0F88171D25B48E180068586E /* API.swift */,
 			);
 			path = "Rick-and-Morty";
 			sourceTree = "<group>";
@@ -516,6 +529,7 @@
 		B28955BAE94511B3E7F730E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0F88174525B4915E0068586E /* SQLite.framework */,
 				79A48CAF7CD2B26E06DF5A0D /* Pods_Rick_and_Morty.framework */,
 			);
 			name = Frameworks;
@@ -530,6 +544,7 @@
 			buildPhases = (
 				5D29E295810827FCFB4EABEE /* [CP] Check Pods Manifest.lock */,
 				0F8E742825A4873D00A43121 /* Swiftlint */,
+				0F88171825B48C3E0068586E /* Generate Apollo GraphQL API */,
 				0F8E73FC25A485E800A43121 /* Sources */,
 				0F8E73FD25A485E800A43121 /* Frameworks */,
 				0F8E73FE25A485E800A43121 /* Resources */,
@@ -584,7 +599,9 @@
 				0F8E741025A485E800A43121 /* LaunchScreen-Rick-and-Morty.storyboard in Resources */,
 				0F547B0225A5CD90001AD526 /* CharactersViewController.xib in Resources */,
 				0F8E740D25A485E800A43121 /* Assets.xcassets in Resources */,
+				0F88171B25B48DB00068586E /* Queries.graphql in Resources */,
 				0F3331A425AF016D000C3652 /* CharacterDetailsViewController.xib in Resources */,
+				0F88171525B48BD60068586E /* schema.json in Resources */,
 				0F33322F25B178A1000C3652 /* EpisodesViewController.xib in Resources */,
 				0F80AA7825AD78DD002E8316 /* ProgressHudContainerView.xib in Resources */,
 				0F80A98025A72687002E8316 /* CharacterTableViewCell.xib in Resources */,
@@ -594,6 +611,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0F88171825B48C3E0068586E /* Generate Apollo GraphQL API */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo GraphQL API";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nSCRIPT_PATH=\"${PODS_ROOT}/Apollo/scripts\"\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API.swift\n\n";
+		};
 		0F8E742825A4873D00A43121 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -659,6 +694,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F33327E25B1D335000C3652 /* AppTheme.swift in Sources */,
+				0F88172125B48E6B0068586E /* ApolloNetwork.swift in Sources */,
 				0F80AADD25ADD86F002E8316 /* CharactersModuleFactory.swift in Sources */,
 				0F33320325B012D1000C3652 /* InfiniteScrollableTableView.swift in Sources */,
 				0F547B1425A5D490001AD526 /* Observable.swift in Sources */,
@@ -680,6 +716,7 @@
 				0F8E744525A49B2800A43121 /* Router.swift in Sources */,
 				0F80AAA125ADC068002E8316 /* TabbarController.swift in Sources */,
 				0F3331A725AF017A000C3652 /* CharacterDetailsStore.swift in Sources */,
+				0F88171E25B48E180068586E /* API.swift in Sources */,
 				0F8E740425A485E800A43121 /* AppDelegate.swift in Sources */,
 				0F8E744C25A49CD700A43121 /* CoordinatorFactory.swift in Sources */,
 				0F33328225B1D4A9000C3652 /* String+Format.swift in Sources */,

@@ -1,5 +1,6 @@
 excluded:
   - Pods
+  - Rick-and-Morty/API.swift
 disabled_rules:
   - nesting
   - superfluous_disable_command
