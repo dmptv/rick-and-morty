@@ -1,5 +1,8 @@
 PODS:
   - Alamofire (5.2.2)
+  - Apollo (0.33.0):
+    - Apollo/Core (= 0.33.0)
+  - Apollo/Core (0.33.0)
   - Disk (0.6.4)
   - Kingfisher (5.15.5):
     - Kingfisher/Core (= 5.15.5)
@@ -26,6 +29,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (= 5.2.2)
+  - Apollo (= 0.33.0)
   - Disk (= 0.6.4)
   - Kingfisher (= 5.15.5)
   - MaterialComponents/ActivityIndicator (= 117.0.0)
@@ -37,6 +41,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Apollo
     - Disk
     - Kingfisher
     - MaterialComponents
@@ -51,6 +56,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  Apollo: 85c8eb57330bdbffa9d9affabc73f961e1225c4e
   Disk: dcee5c2e98fb72f9a924cde8da8435b08244a80e
   Kingfisher: e3ec347a5ab8817b7585ef46923a2d2b9a7d8fbe
   MaterialComponents: 29320b6a89c4c90e41c7a41fc70e91127ac34161
@@ -63,6 +69,6 @@ SPEC CHECKSUMS:
   SwiftMessages: 633304165351b8e3dcbb81a71f8efcd86f9c1669
   Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
 
-PODFILE CHECKSUM: fb52de32b187e0728aab58d72175aec38a15b433
+PODFILE CHECKSUM: 3ced5b6d620809247487570ba3cf4d15f73a63ef
 
 COCOAPODS: 1.10.0

@@ -6,6 +6,7 @@ def core_pods
   pod 'Alamofire', '5.2.2'
   pod 'PromisesSwift', '1.2.10'
   pod 'Kingfisher', '5.15.5'
+  pod 'Apollo', '0.33.0'
   
   pod 'Swinject', '2.7.1'
   pod 'SwiftLint'
