@@ -54,7 +54,7 @@ final class CharactersStore {
     
     private func getCharacters() {
         if (fetchedPages == 0) || (allPages / fetchedPages) > 1 {
-            provider.getCharacters(fetchedPages + 100).then { [weak self] response in
+            provider.getCharacters(fetchedPages + 1).then { [weak self] response in
                 guard let self = self else { return }
                 self.allPages = response.info.pages
                 self.allCharacters.append(contentsOf: response.results)
